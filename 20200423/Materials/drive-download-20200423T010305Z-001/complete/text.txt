@@ -1,0 +1,82 @@
+Your Name Portfolio Web
+
+About
+Works
+Contact
+
+
+About Me
+コスゲタツヤのスタンプ画像
+
+Your Name is
+Webサイトなどの制作業を中心に、Webデザインなどを教えるスクールで講師業を
+行うなど、活動分野は多岐に渡る。最近では、Webメディアへの記事執筆・寄稿など
+ライターとしての活動も行っている。趣味は旅と写真・ゲストハウス巡りで、仕事や
+プライベートを問わず日本全国様々な場所に足を運び、分野を越えた交流を楽しん
+でいる。
+
+Works
+
+
+オリジナルイラスト年賀状の画像
+オリジナルイラスト年賀状を作成しました！
+2018/02/06
+
+マッサージ院のWebサイトのキャプチャ画像
+マッサージ院のWebサイトを作成しました！
+2018/01/01
+
+自作ブログのキャプチャ画像
+自ら運営するブログのデザインから構築まで一通り担当し、作成しました！
+2018/01/01
+
+もっと見る
+
+Contact
+
+お名前
+メールアドレス
+お問い合わせ内容
+
+制作のご依頼
+イベント出演依頼
+その他
+
+お問い合わせ詳細
+
+送信
+
+
+copyrights 2017-2018 Your Name All Rights Reserved.
+
+
+
+<title>Your Portfolio Web</title>
+<meta name="description" content="Your NameのポートフォリオWebサイトです。プロフィール掲載・制作してきた作品の紹介などをしています。">
+<meta property="og:title" content="Your Name Portfolio Site">
+<meta property="og:type" content="website">
+<meta property="og:url" content="#">
+<meta property="og:image" content="images/meta/ogimage.png">
+<meta property="og:site_name" content="Your Name Portfolio Site">
+<meta property="og:description" content="Your Name のPortfolio Siteです。">
+<link rel="apple-touch-icon" href="images/meta/apple-touch-icon.png">
+<link rel="icon" href="images/meta/icon.png">
+<link rel="shortcut icon" href="images/meta/favicon.ico">
+
+
+
+<button class="btn-trigger">
+	<svg viewBox="0 0 44 44" xmlns:xlink="http://www.w3.org/1999/xlink" role="img" aria-labelledby="menuButtonTitle">
+     		<title id="menuButtonTitle">Menu</title>
+        	<symbol id="bar">
+        		<rect width="28" height="2" fill="#f0f0f0"></rect>
+       		</symbol>
+        	<use xlink:href="#bar" x="8" y="14"></use>
+        	<use xlink:href="#bar" x="8" y="24"></use>
+        	<use xlink:href="#bar" x="8" y="34"></use>
+        </svg>
+</button>
+
+
+font-family:"Open Sans",'ヒラギノ角ゴ ProN W3', Hiragino Kaku Gothic ProN, "メイリオ", Meiryo, sans-serif;
+

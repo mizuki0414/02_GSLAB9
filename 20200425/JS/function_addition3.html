@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <div id="rand"></div>
+    <script src="http://code.jquery.com/jquery.min.js"></script>
+</head>
+<body>
+    <script>
+        function rand(n){
+            var num = Math.floor(Math.random() * n + 1)
+            return num
+        }
+        var t = rand(10);
+        $("#rand").html(t);
+    </script>
+</body>
+</html>

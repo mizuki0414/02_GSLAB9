@@ -1,0 +1,99 @@
+body{
+    text-align: center;
+    margin: 0px;
+    background-color: #111111;
+}
+/* ユーザのアップロードした画像に関する記述 */
+.titleArea{
+    height: 50px;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    background-color: #25b425;
+  }
+
+  #title {
+    margin-left: 30px;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    line-height: 50px;
+    text-align: left;
+    font-weight: bold;
+    font-size: 18px;
+    color: white;
+  }
+
+#title{
+    height: 50px;
+    text-align: left;
+    background-color: #25b425;
+    font-weight: bold;
+    font-size: 18px;
+    color: white;
+    line-height: 50px;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+ul{
+    /* display: flex; */
+    margin-block-start: 5em;
+}
+
+#uploadArea_list{
+    list-style: none;
+    text-align: center;
+}
+
+.uploadArea_caption{
+    color:white;
+    text-align: center;
+}
+
+#uploader{
+    color: white;
+    margin-bottom: 10px;
+    display: inline-block;
+    border-radius: 1px;
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: top;
+    border: 1px solid #d9d9d9;
+    padding: 8px;
+    display: block;
+}
+
+.resultArea{
+    border: 0.5px solid #d9d9d9;
+    width:1200px;
+    height:500px;
+    margin:0px auto;
+    text-align: center;
+}
+#showPic{
+    border-radius: 2px;
+    width:40%;
+    height:300px;
+    margin: 10px;
+    float:left;
+}
+#resultTable{
+    width:40%;
+    float:right;
+    margin: 10px;
+}
+#chartArea{
+    border: 0.5px solid #d9d9d9;
+    border-radius: 2px;
+    width:500px;
+    height:500px;
+    margin: 0px;
+    float:left;
+}
+#textTable{
+    width:40%;
+    float:right;
+    margin: 10px;
+}
+/* 初期状態では結果部分が表示されないようにするための記述 */
+.hidden{
+    display: none;
+}

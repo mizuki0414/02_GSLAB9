@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="a1">アイウエオ</div>
+    <div id="a2">カキクケコ</div>
+    <div id="a3">サシスセソ</div>
+    <p>DOMは(DocumentObjectModel)</p>
+    <script>
+        const a1 = document.querySelector("#a1");
+        console.log(a1.id);
+        console.log(a1.innerHTML);
+    </script>
+    <!--
+        id属性を指定して属性の値を取得するとき
+        const mybtn = document.getElementById('mybtn');
+        const mybtn = document.querySlector('mybtn');
+        mybtn.id mybtn.src mybtn.className
+     -->
+</body>
+</html>

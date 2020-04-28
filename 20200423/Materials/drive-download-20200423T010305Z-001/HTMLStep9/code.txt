@@ -1,0 +1,14 @@
+﻿    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Your Portfolio Web</title>
+    <meta name="description" content="Your NameのポートフォリオWebサイトです。プロフィール掲載・制作してきた作品の紹介などをしています。">
+    <meta property="og:title" content="Your Name Portfolio Site">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="#">
+    <meta property="og:image" content="images/meta/ogimage.png">
+    <meta property="og:site_name" content="Your Name Portfolio Site">
+    <meta property="og:description" content="Your Name のPortfolio Siteです。">
+    <link rel="apple-touch-icon" href="images/meta/apple-touch-icon.png">
+    <link rel="icon" href="images/meta/icon.png">
+    <link rel="shortcut icon" href="images/meta/favicon.ico">

@@ -1,0 +1,244 @@
+@charset "utf-8";
+html{
+    font-size: 62.5%;/* 16px × 62.5% = 10px*/
+}
+
+
+
+body{
+    color: #333333;
+    font-family:"Open Sans",'ヒラギノ角ゴ ProN W3', Hiragino Kaku Gothic ProN, "メイリオ", Meiryo, sans-serif;
+    font-size: 1.6rem;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+.text-center{
+    text-align: center;
+}
+/* ------------------
+    hero-image
+ *------------------ */
+.hero-image{
+    position: relative;
+}
+
+
+.hero-image__text{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate3d(-50%,-50%,0);
+    color: #fff;
+    font-size: 7.2rem;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+}
+
+
+
+/* ------------------
+    header
+ *------------------ */
+ .header{
+     background-color: #78d0fd;
+ }
+.header-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    height: 60px;
+}
+.site-title{
+    color: #fff;
+    font-size:2.4rem;
+    font-weight:bold;
+}
+.nav-list{
+    display: flex;
+}
+.nav-item{
+    margin: 0 0 0 48px;
+}
+.nav-item>a{
+    color: #fff;
+    text-transform: uppercase;
+}
+
+/* ------------------
+    about
+ *------------------ */
+.profile{
+    padding: 80px 0;
+}
+.profile-wrapper{
+    width: 560px;
+    margin: auto;
+}
+.profile__title{
+    margin: 0 0 40px;
+    font-size: 2.4rem;
+    font-weight: bold;
+}
+.profile__eyecatch{
+    margin: 0 0 24px;
+}
+.profile__name{
+    margin: 0 0 40px;
+    font-size: 2.4rem;
+}
+.profile__text{
+    line-height: 2;
+    text-align: justify;
+    text-align: inter-ideograph;
+}
+/* ------------------
+    work
+ *------------------ */
+.wrapper{
+    max-width: 1140px;
+    margin: auto;
+}
+.works{
+    padding: 80px 0;
+    background-color: #f4f4f4;
+}
+.works__list{
+    display: flex;
+    margin: 0 0 64px;
+}
+.works__item{
+    width: 33.333%;
+}
+
+.works__title{
+    margin: 0 0 64px;
+    font-size: 2.4rem;
+    font-weight: bold;
+}
+.works__eyecatch{
+    margin: 0 0 24px;
+}
+.works__contents{
+    padding: 0 16px;
+}
+.works__heading{
+    margin: 0 0 16px;
+    font-weight: bold;
+    line-height: 1.75;
+    text-decoration: underline;
+}
+
+ .btn{
+    display: block;
+    width: 214px;
+    margin: auto;
+    padding: 21px 0;
+    background-color: #1ab1ff;
+    color:#fff;
+    font-size: 1.8rem;
+ }
+ /* ------------------
+    contact
+ *------------------ */
+ .contact{
+     padding: 80px 0 64px;
+ }
+.contact-wrapper{
+    width: 560px;
+    margin: auto;
+}
+.contact__title{
+    margin: 0 0 64px;
+    font-size: 2.4rem;
+    font-weight: bold;
+}
+
+.form-inner{
+    display: flex;
+    flex-wrap:wrap;
+    margin: 0 0 40px;
+}
+
+ .form-title{
+    width: 152px;
+    margin: 0 20px 0 0;
+    padding: 8px 0;
+    font-weight: bold;
+    text-align: right;
+ }
+ .form-title.radio-check{
+     padding: 0;
+ }
+ .form-item{
+     width: 388px;
+     margin: 0 0 32px;
+ }
+ .form-parts{
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none;
+    width: 100%;
+    padding: 6px 8px;
+    border: solid 1px #c9c9c9;
+    font-size: 1.6rem;
+ }
+ .form-label{
+     margin: 0 16px 0 0;
+     font-size: 1.4rem;
+ }
+ input[type*="radio"]{
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none;
+    width: 16px;
+    height: 16px;
+    margin: 0 10px 0 0;
+    border: solid 1px #a0a0a0;
+    border-radius: 50%;
+    vertical-align: -2px;
+ }
+ input[type*="radio"]:checked{
+     background-color: #a0a0a0;
+ }
+ .btn-submit{
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none;
+    border: none;
+    line-height: 1;
+ }
+  /* ------------------
+    footer
+ *------------------ */
+ .footer{
+     padding: 24px 0;
+     background-color: #707070;
+ }
+.footer .wrapper{
+    position: relative;
+}
+ .btn-pagetop{
+     position: absolute;
+     top:-78px;
+     right: 0;
+     display: block;
+     width: 44px;
+     height: 44px;
+     border-radius: 50%;
+     background-color: #707070;
+ }
+ .icon-up{
+     display: block;
+     padding: 10px 0;
+     color: #fff;
+     font-size: 2.4rem;
+ }
+
+ .copyrights{
+     color: #fff;
+ }
+
+ 

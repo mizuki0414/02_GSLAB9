@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Your Portfolio Web</title>
+    <meta name="description" content="Your NameのポートフォリオWebサイトです。プロフィール掲載・制作してきた作品の紹介などをしています。">
+    <meta property="og:title" content="Your Name Portfolio Site">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="#">
+    <meta property="og:image" content="images/meta/ogimage.png">
+    <meta property="og:site_name" content="Your Name Portfolio Site">
+    <meta property="og:description" content="Your Name のPortfolio Siteです。">
+    <link rel="apple-touch-icon" href="images/meta/apple-touch-icon.png">
+    <link rel="icon" href="images/meta/icon.png">
+    <link rel="shortcut icon" href="images/meta/favicon.ico">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+    <!-- hero-image -->
+    <img src="images/header/bg-image.jpg" alt="ハムスターの画像">
+    <p>Hello, World!!</p>
+    <!-- //hero-image -->
+
+    <!-- header -->
+    <header>
+        <h1>Your Name Portfolio Web</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#works">Works</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>   
+        </nav>
+    </header>
+    <!-- header -->
+
+
+    <main>
+        <!-- about -->
+        <section id="about">
+            <h2>About Me</h2>
+            <img src="images/about/profile.png" alt="コスゲタツヤのスタンプ画像">
+            <h3>Your Name is</h3>
+            <p>Webサイトなどの制作業を中心に、Webデザインなどを教えるスクールで講師業を
+            行うなど、活動分野は多岐に渡る。最近では、Webメディアへの記事執筆・寄稿など
+            ライターとしての活動も行っている。趣味は旅と写真・ゲストハウス巡りで、仕事や
+            プライベートを問わず日本全国様々な場所に足を運び、分野を越えた交流を楽しん
+            でいる。</p>      
+        </section>
+        <!-- //about -->
+
+        <!-- works -->
+        <section id="works">
+            <h2>Works</h2>
+            <ul>
+                <li>
+                    <img src="images/works/work1.png" alt="オリジナルイラスト年賀状の画像">
+                    <h3>オリジナルイラスト年賀状を作成しました！</h3>
+                    <p>2018/02/06</p>
+                </li>
+                
+                <li>
+                    <img src="images/works/work2.png" alt="マッサージ院のWebサイトのキャプチャ画像">
+                    <h3>マッサージ院のWebサイトを作成しました！</h3>
+                    <p>2018/01/01</p>
+                    
+                </li>
+                
+                <li>
+                    <img src="images/works/work3.png" alt="自作ブログのキャプチャ画像">
+                    <h3>自ら運営するブログのデザインから構築まで一通り担当し、作成しました！</h3>
+                    <p>2018/01/01</p>
+                </li>
+            </ul>
+            <a href="#" target="_blank">作品集をもっと見る</a>
+        </section>
+        <!-- // works -->
+
+        <!-- contact -->
+        <section id="contact">
+            <h2>Contact</h2>
+
+            <form action="#" method="POST">
+                <dl>
+                    <dt>お名前</dt>
+                    <dd><input type="text" name="name" id="name"></dd>
+                    <dt>メールアドレス</dt>
+                    <dd><input type="email" name="email" id="email"></dd>
+                    <dt>お問い合わせ内容</dt>
+                    <dd>
+                        <label for="making"><input type="radio" name="kind" id="making" value="制作のご依頼">制作のご依頼</label>
+                        <label for="event"><input type="radio" name="kind" id="event" value="イベント出演依頼">イベント出演依頼</label>
+                        <label for="other"><input type="radio" name="kind" id="other" value="その他">その他</label>
+                    </dd>
+                    <dt>お問い合わせ詳細</dt>
+                    <dd>
+                        <textarea name="detail" id="detail" cols="30" rows="10"></textarea>
+                    </dd>
+                </dl>
+                <input type="submit" value="送信">
+            </form> 
+        </section>
+        <!-- //contact -->
+    </main>
+    
+    <!-- footer -->
+    <footer>
+        <small>copyrights 2017-2018 Your Name All Rights Reserved.</small>
+    </footer>
+    <!-- //footer -->
+
+</body>
+</html>

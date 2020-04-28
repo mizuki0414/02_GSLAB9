@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <title>Good Audience</title>
+    <link rel="stylesheet" type="text/css" href="./CSS/style.css">
+</head>
+
+    <body>
+    <!-- タイトルエリア -->
+    <div class="titleArea">
+        <h3 id='title'>Good Audience</h3>
+    </div>
+    <!--- 画像をアップロードさせるためのボタンのあるエリア --->
+        <div id="uploadArea">
+            <li class="uploadArea_list">
+                <p class="uploadArea_caption">- Choose an image dir (.jpg or .png materials path) -</p>
+                <input type="file" id="uploader" multiple="multiple">
+            </li>
+        </div>
+    <hr>
+
+    <!--- Google Cloud Vision APIに画像ファイルを送り、得られた結果を表示するエリア--->
+
+    <!--- 初期状態ではクラス"hidden"を付与し、CSSでhiddenクラスは表示されないよう記述します --->
+    <ul>
+        <li>
+            <div class="resultArea hidden">
+                <!--- アップロードされた画像を表示 --->
+                <div id="showPic"></div>
+            </div>
+        </li>
+        <li>
+            <div class="resultArea hidden">
+                <!--- 人物の表情に関する結果をレーダーチャートで表示 --->
+                <div id="chartArea"></div>
+            </div>
+        </li>
+    </ul>
+
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <!--- 表情分析の結果をレーダーチャートで表すためにhighchartを使用 --->
+    <script src="http://code.highcharts.com/highcharts.js"></script>
+    <script src="http://code.highcharts.com/highcharts-more.js"></script>
+    <script type="text/javascript" src="CloudVision.js"></script>
+
+    <!-- script -->
+
+</body>
+
+</html>
