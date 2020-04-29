@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<header>
+    <h1>memopad</h1>
+</header>
+<main style="display:none;">
+    <!-- テキスト入力エリア -->
+    <textarea id="text_area"></textarea>
+
+    <!-- ボタンエリア -->
+    <ul>
+        <li id="echo">表示</li>
+        <li id="save">保存</li>
+        <li id="clear">消去</li>
+    </ul>
+</main>
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $("main").slideDown(500);
+        // 1.Save クリックイベント
+        $("#save").on("click",function(){
+            const value = $("#text_area").val();
+            console.log(value);
+            localStorage.setItem("memo",value);
+            alert("保存しました。");
+        });
+        // 1.Save クリックイベント
+        $("#clear").on("click",function(){
+            alert("削除しました。");
+        });
+    </script>
+</body>
+</html>

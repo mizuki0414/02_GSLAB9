@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // thisは親を読むよ
+        // 下の関数は、globalなので、以下の奴は
+        var info = {
+            name : 'Yamazaki',
+            gengo: 'Javascript',
+            program: function(){
+                // setTimeout(function(){
+                // ↓みたいに、アロー関数を使うと、1個上だけをみるからOK
+                   setTimeout(() => {
+                    console.log('趣味は' + this.gengo);
+                },1000);
+            },
+            names: function(){
+                console.log('私の名前は'+this.name);
+            }
+        }
+        info.program();
+        info.names();
+    </script>
+</body>
+</html>

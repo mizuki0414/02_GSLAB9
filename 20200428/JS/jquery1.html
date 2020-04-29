@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- jquery文法 -->
+    <!-- セレクタ⇨メソッド⇨イベント-->
+    <!-- $("#email").on("click",function() {
+        $("email").html("HTMLや文字列")
+    });
+
+    jQuery [セレクタ]
+    ・CSSセレクタ互換の記述が可能
+        #id ⇨ $("#id名")
+        .class ⇨ $(".class名")
+        Element ⇨ $("element名")
+    ・セレクタ（CSSと同様）
+        複数セレクタを指定 $("div,p,a")
+        要素の親子関係 $("div > p")
+        子孫関係 $("div p") -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $("body").append("<div>ABC</div>");
+    </script>
+</body>
+</html>

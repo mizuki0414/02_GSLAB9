@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // このvarはグローバル変数
+        var a = "A";
+        function alt(){
+            alert(a);
+        }
+        alert(a);
+        // letはブロックスコープなので
+        // let a = "A"
+        if(a=="A"){
+            alert("OK");
+            // letはダメ
+            // varは読み込める
+            // const b = 1; はダメ
+            // let b = 1; はダメ
+            // var b = 1; はOK
+        }
+        alert(b);
+
+    </script>
+</body>
+</html>

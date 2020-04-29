@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 関数の呼び出しの、順番の話
+        // ↓の書き方は、どこで呼び出しても実行される
+        function names1(){
+            console.log("Yamazaki");
+        }
+        // ↓の書き方は、先に呼び出さないとダメ
+        let names2 = function(){
+            console.log("Daisuke");
+        }
+        // アロー関数はしたの関数、従来の関数と動作は一緒で、thisの違いがある。
+        let names3 = () => {
+            console.log("Yamazaki,Daisuke");
+        }
+        // アロー関数を使って、実行
+        const a = () => {
+            alert("A");
+        }
+        a();
+
+        //  アロー関数 : テンプレートリテラル使用
+        let names4 = (a,b) => {
+            console.log(`${a} ${b}`);
+        }
+        names4("mizuki","onogawa");
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="a1">11111</div>
+    <div id="a2">22222</div>
+    <div id="a3">33333</div>
+    <div id="a4">44444</div>
+    <div id="a5">55555</div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+    const link = '<a href="#">リンク</a>';
+    $("#a1").html(link); //html処理されて表示
+    $("#a2").css("color","#ff0000"); //cssに処理を記述
+    $("#a3").css("background-color","#000000"); //cssに処理を記述
+    $("#a4").fadeOut(1000).fadeIn(1000);
+    $("#a5").prepend("アイウエオ");
+    $("#a5").append("サシスセソ");
+</script>
+</body>
+</html>
