@@ -1,6 +1,6 @@
 //section 1
 //APIを利用する際のURL
-var KEY = 'AIzaSyBJrs9ze94beUilqJvXZJvMMrKNYW-L1O4'
+var KEY = ''
 var url = 'https://vision.googleapis.com/v1/images:annotate?key='
 var api_url = url + KEY
 
