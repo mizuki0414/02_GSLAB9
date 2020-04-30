@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <title>Good Audience</title>
+    <link rel="stylesheet" type="text/css" href="./CSS/style.css">
+</head>
+
+    <body>
+    <!--- 画像をアップロードさせるためのボタンのあるエリア --->
+    <div class="titleArea">
+        <h3 id='title'>Good Audience</h3>
+    </div>
+    <div id="uploadArea">
+        <li class="uploadArea_list">
+            <p class="uploadArea_caption">- Choose your Input (.jpg or .png materials path) -</p>
+            <input type="file" id="uploader" multiple="multiple">
+        </li>
+    </div>
+    <hr>
+    <!--- Google Cloud Vision APIに画像ファイルを送り、得られた結果を表示するエリア--->
+    <!--- 初期状態ではクラス"hidden"を付与し、CSSでhiddenクラスは表示されないよう記述します --->
+    <h3 class="resultsTitle">1.Audience Face Detaction</h3>
+    <ul class="resultsPain hidden">
+        <li id="picPain"></li>
+        <li id="chartPain">
+            <ul id="chartContainer"></ul>
+        </li>
+    </ul>
+
+    <h3 class="resultsTitle">2.Data Sets</h3>
+    <ul id="output"></ul>
+
+    <h3 class="resultsTitle">3.Reaction Average</h3>
+
+</body>
+        <!-- ここにアプリのscriptタグを貼り付けます。 -->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-database.js"></script>
+
+    <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyA2l2ZVojCfRDPtgqcyV1riACRlyChSAkI",
+        authDomain: "goodaudience-cea57.firebaseapp.com",
+        databaseURL: "https://goodaudience-cea57.firebaseio.com",
+        projectId: "goodaudience-cea57",
+        storageBucket: "goodaudience-cea57.appspot.com",
+        messagingSenderId: "36036509532",
+        appId: "1:36036509532:web:1e082ad6ab65da1bc0cb99",
+        measurementId: "G-HGCL2JTW93"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+    </script>
+    <!-- <script src="./index.js"></script> -->
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <!--- 表情分析の結果をレーダーチャートで表すためにhighchartを使用 --->
+    <script src="http://code.highcharts.com/highcharts.js"></script>
+    <script src="http://code.highcharts.com/highcharts-more.js"></script>
+    <script src="CloudVision.js"></script>
+    <!-- script -->
+</html>
+
+<div class="li" style="background-image: url(); background-size: cover;"></div>

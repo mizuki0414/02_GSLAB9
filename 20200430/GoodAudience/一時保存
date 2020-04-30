@@ -1,0 +1,14 @@
+<h3 class="resultsTitle">Audience Face Detaction</h3>
+<div class="resultsPain">
+    <div class="results">
+        <ul id="resultArea" class="resultArea hidden">
+            <!--- アップロードされた画像を表示 --->
+            <ul id="showPic"></ul>
+            <!--- 人物の表情に関する結果をレーダーチャートで表示 --->
+            <ul id="chartArea3"></ul>
+            <ul id="chartArea1"></ul>
+            <ul id="chartArea2"></ul>
+            <div id="output"></div>
+        </ul>
+    </div>
+</div>

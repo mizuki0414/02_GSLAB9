@@ -1,0 +1,124 @@
+body {
+  text-align: center;
+  margin: 0px;
+  background-color: #111111;
+}
+
+.titleArea{
+  background-color: #25b425;
+  height: 50px;
+}
+
+#title {
+  margin-left: 30px;
+  text-align: left;
+  font-weight: bold;
+  font-size: 18px;
+  color: white;
+  line-height: 50px;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+}
+
+.resultsTitle {
+  margin-left: 30px;
+  text-align: left;
+  font-weight: bold;
+  font-size: 18px;
+  color: white;
+  line-height: 50px;
+  margin-block-start: 2em;
+  margin-block-end: 0em;
+}
+
+#uploadArea {
+  margin-bottom: 30px;
+}
+
+.resultsPain {
+  display: flex;
+  margin-block-start: 5em;
+  overflow-x: scroll;
+  width: 1200px;
+  height: auto;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#picPain {
+  width: 260px;
+  height: auto;
+}
+
+.imgList{
+  height: 260px;
+  width: 260px;
+}
+
+#chartPain {
+  width: 950px;
+  height: auto;
+}
+
+#chartContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#chartContainer li {
+  width: 260px;
+  height: 260px;
+  min-width: 260px;
+}
+
+#uploadArea_list {
+  list-style: none;
+  text-align: center;
+}
+
+.uploadArea_caption {
+  color: white;
+  text-align: center;
+}
+
+#uploader {
+  color: white;
+  margin-bottom: 10px;
+  display: inline-block;
+  border-radius: 1px;
+  margin-left: auto;
+  margin-right: auto;
+  vertical-align: top;
+  border: 1px solid #d9d9d9;
+  padding: 8px;
+  display: block;
+}
+
+#output{
+  color: white;
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#output li{
+  height: 300px;
+  width: 350px;
+  border: 1px solid #d9d9d9;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  list-style: none;
+}
+
+#textTable {
+  width: 40%;
+  float: right;
+  margin: 10px;
+}
+/* 初期状態では結果部分が表示されないようにするための記述 */
+.hidden {
+  display: none;
+}

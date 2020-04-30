@@ -1,0 +1,19 @@
+body {
+    background-color: gainsboro;
+ }
+ 
+ h1 {
+    color: coral;
+    text-align: center;
+ }
+ 
+ div {
+    text-align: center;
+ }
+ 
+ textarea {
+    vertical-align:top;
+ }
+  #output {
+    background-color: skyblue;
+ }

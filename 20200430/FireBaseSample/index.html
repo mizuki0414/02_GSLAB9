@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Chat App</title>
+   <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+   <h1>リアルタイムチャット</h1>
+   <div>
+       <div>
+           Name<br><input type="text" id="name">
+       </div>
+       <br>
+       <div>
+           Message<br><textarea id="message" row="10"></textarea><br>
+           <br>
+           <button id="send">send</button>
+       </div>
+       <hr>
+       <div id="output"></div>
+   </div>
+</body>
+    <!-- ここにアプリのscriptタグを貼り付けます。 -->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-database.js"></script>
+
+    <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyA2l2ZVojCfRDPtgqcyV1riACRlyChSAkI",
+        authDomain: "goodaudience-cea57.firebaseapp.com",
+        databaseURL: "https://goodaudience-cea57.firebaseio.com",
+        projectId: "goodaudience-cea57",
+        storageBucket: "goodaudience-cea57.appspot.com",
+        messagingSenderId: "36036509532",
+        appId: "1:36036509532:web:1e082ad6ab65da1bc0cb99",
+        measurementId: "G-HGCL2JTW93"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+    </script>
+    <script src="./index.js"></script>
+</html>
