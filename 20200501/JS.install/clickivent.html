@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Practice</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: skyblue;
+            cursor: pointer;
+        }
+        .circle {
+            background:pink;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div id="target" class="box">test1</div>
+    <script>
+    'use strict';
+
+        const target = document.getElementById('target');
+
+        target.addEventListener('click', () => {
+        // document.getElementById('target').style.background = 'pink';
+        // document.getElementById('target').style.borderRadius = '50%';
+        // document.getElementById('target').classList.add('circle');
+        target.classList.toggle('circle');
+    });
+    </script>
+</body>
+</html>

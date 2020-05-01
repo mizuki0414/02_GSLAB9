@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <select id="view"></select>
+</head>
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        // 1.配列を作成
+        let arry = ["A","B","C","D","E"];
+        // 2.変数の入れ物を作成
+        let str = "";
+        // 3.繰り返し処理で、文字列と配列を組み合わせ、作成
+        for(let i=0; i<arry.length; i++){
+            str += `<option>配列:${arry[i]}</option>`;
+        }
+        $("#view").html(str);
+    </script>
+</body>
+</html>

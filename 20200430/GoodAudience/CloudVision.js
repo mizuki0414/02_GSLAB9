@@ -5,7 +5,7 @@ const send = document.getElementById("send");
 
 //section 1
 //APIを利用する際のURL
-var KEY = "";
+var KEY = "AIzaSyBJrs9ze94beUilqJvXZJvMMrKNYW-L1O4";
 var url = "https://vision.googleapis.com/v1/images:annotate?key=";
 var api_url = url + KEY;
 
@@ -24,13 +24,13 @@ $("#uploader").change(function (evt) {
   getImageInfo(evt);
   clear();
   $(".resultsPain").removeClass("hidden");
+  $(".average").removeClass("hidden");
 });
 
 //section 4
 //画像ファイルを読み込み、APIを利用するためのURLを組み立てる
 function getImageInfo(evt) {
   var file = evt.target.files;
-
   //  var reader = new FileReader();
   var dataUrl = "";
   for (var i = 0; i < file.length; i++) {
@@ -113,6 +113,7 @@ console.log(result.responses[0].faceAnnotations[0]);
     angleExpression.push(result.responses[0].faceAnnotations[0].panAngle);
     angleExpression.push(result.responses[0].faceAnnotations[0].tiltAngle);
 
+    console.log(angleExpression);
     //チャート描画の処理3
     const chartHTML1 = $("<li></li>");
     chartHTML1.highcharts({
@@ -269,19 +270,19 @@ console.log(result.responses[0].faceAnnotations[0]);
       str += '<div class="text">TiltAngle：'+v.tiltAngle+'</div></li>';
       output.innerHTML += str;
       // 平均値
-      let avg = "";
-      avg += '<li class="dataLists"><div class="name">Name：'+v.name+'</div>';
-      avg += '<div class="text">Date：'+v.date+'</div>';
-      avg += '<div class="text">DetectionConfidence：'+v.detectionConfidence+'</div>';
-      avg += '<div class="text">LandmarkingConfidence：'+v.landmarkingConfidence+'</div>';
-      avg += '<div class="text">JoyLikelihood：'+v.joyLikelihood+'</div>';
-      avg += '<div class="text">SorrowLikelihood：'+v.sorrowLikelihood+'</div>';
-      avg += '<div class="text">AngerLikelihood：'+v.angerLikelihood+'</div>';
-      avg += '<div class="text">SurpriseLikelihood：'+v.surpriseLikelihood+'</div>';
-      avg += '<div class="text">HeadwearLikelihood：'+v.headwearLikelihood+'</div>';
-      avg += '<div class="text">PanAngle：'+v.panAngle+'</div>';
-      avg += '<div class="text">TiltAngle：'+v.tiltAngle+'</div></li>';
-      output.innerHTML += avg;
+      // let avg = "";
+      // avg += '<li class="dataLists"><div class="name">Name：'+v.name+'</div>';
+      // avg += '<div class="text">Date：'+v.date+'</div>';
+      // avg += '<div class="text">DetectionConfidence：'+v.detectionConfidence+'</div>';
+      // avg += '<div class="text">LandmarkingConfidence：'+v.landmarkingConfidence+'</div>';
+      // avg += '<div class="text">JoyLikelihood：'+v.joyLikelihood+'</div>';
+      // avg += '<div class="text">SorrowLikelihood：'+v.sorrowLikelihood+'</div>';
+      // avg += '<div class="text">AngerLikelihood：'+v.angerLikelihood+'</div>';
+      // avg += '<div class="text">SurpriseLikelihood：'+v.surpriseLikelihood+'</div>';
+      // avg += '<div class="text">HeadwearLikelihood：'+v.headwearLikelihood+'</div>';
+      // avg += '<div class="text">PanAngle：'+v.panAngle+'</div>';
+      // avg += '<div class="text">TiltAngle：'+v.tiltAngle+'</div></li>';
+      // avarage.innerHTML += avg;
     });
 
   } else {
