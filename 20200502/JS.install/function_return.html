@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 以下は「関数宣言形式」の関数を使っている。
+        function sum(a, b, c) {
+            return a + b + c;
+        }
+        const total = sum(1, 2, 3) + sum(3, 4, 5);
+        console.log(total);
+
+        // 以下は「関数式」の状態で関数を使っている。
+        const average = function(d, e, f){
+            return (d + e + f) / 3;
+        }
+        const ans = average(2, 4, 6);
+        console.log(ans);
+    </script>
+</body>
+</html>
