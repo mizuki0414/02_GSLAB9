@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // switch文について
+        // 以下のようにif文で書いたプログラムを実行したい時
+        // if (signal === 'red') {
+        //     console.log('Stop!');
+        // } else if (signal === 'yellow') {
+        //     console.log('Caution!');
+        // } else if (signal === 'blue') {
+        //     console.log('Go!')
+        // }
+
+        // Switch文
+        const signal = 'pink';
+        switch (signal) {
+            case 'red':
+                console.log('Stop!');
+                break;
+            case 'yellow':
+                console.log('Caution!');
+                break;
+            case 'blue':
+            case 'green':
+                console.log('Go!');
+                break;
+            default:
+                console.log('Wrong Signal!');
+                break;
+        }
+
+    </script>
+</body>
+</html>

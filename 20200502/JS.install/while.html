@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // whileは特定の条件下で処理を実行し続ける物
+        // while文の注意として、条件式に満たさないと常に無限ループで実行し続ける
+        // 以下が普通の書き方
+        let hp = 100;
+        while (hp > 0) {
+            console.log(`${hp} HP left!`);
+            // これを書き忘れると、無限ループ
+            hp -= 15;
+        }
+        // do whileの構文は最初にdoを実行して、whileで評価する
+        do {
+            console.log(`${hp} HP left!`);
+            hp -= 15;
+        } while (hp > 0);
+    </script>
+</body>
+</html>
