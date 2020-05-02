@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文字</title>
+</head>
+<body>
+    <canvas id="canvas" width="600" height="600"></canvas>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        const canvas = $("#canvas")[0];
+        const ctx = canvas.getContext("2d");
+        // パス開始
+        ctx.beginPath();
+        // 線を引く
+        ctx.moveTo(10,10);
+        ctx.lineTo(200,200);
+        ctx.stroke();
+        ctx.closePath();
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文字</title>
+</head>
+<body>
+    <canvas id="canvas" width="500" height="300"></canvas>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        const canvas = $("#canvas")[0];
+        const ctx = canvas.getContext("2d");
+        // パス開始
+        ctx.beginPath();
+        // 四角線を設定
+        ctx.rect(50,100,300,100);
+        // 線をかく
+        ctx.fillStyle = "#000"
+        ctx.stroke();
+        // 塗りつぶす時
+        ctx.fill();
+
+        // カラー指定
+        // ctx.fillStyle = "#ff0000";
+        // // fontサイズ
+        // ctx.font = "20px_samas";
+        // // 文字の設定位置
+        // ctx.textBaseline = "top";
+        // // 表示文字と座標
+        // ctx.fillText("Hello World!",100,100);
+    </script>
+</body>
+</html>

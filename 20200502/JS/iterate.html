@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <p id="view"></p>
+</head>
+<body>
+    <script>
+        let i = 0;
+        i+=1;
+        console.log(i);
+        i++;
+        console.log(i);
+
+            // for( let i=0; i<10; i++){
+            // console.log(i+"回目");
+            //     str += `ループ: ${i}回目`;
+            // }
+
+        // テンプレートリテラル
+        const name1 = 'ジーズ';
+        const name2 = '太郎';
+        const str = `こんにちは 「僕の名前は ${name1} ${name2}」です`;
+        console.log(str);
+        // 変数「str」は入っている文字列をpタグ
+        $("#view").html(str);
+    </script>
+</body>
+</html>

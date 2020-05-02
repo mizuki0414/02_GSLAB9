@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Practice</title>
+    <style>
+        body {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: skyblue;
+            cursor: pointer;
+            transition: 0.8s;
+            margin: 0 8px 8;
+            margin-right: 8px;
+            text-align: center;
+            line-height: 100px;
+        }
+        .win {
+            background:pink;
+            border-radius: 50%;
+            transform: rotate(360deg);
+        }
+        .lose {
+            transform: scale(0.9);
+        }
+    </style>
+</head>
+<body>
+
+    <script>
+
+    'use strict';
+        // console.log('Hello');
+        console.log("it's me!");
+        // バックスラッシュを打つと、次にくる文字がエスケープされる
+        console.log('it\'s me!');
+        // 改行の話(\n)を文字列の中で打つと、改行される
+        console.log('hel\nlo wor\nld');
+        // 文字列の結合
+        console.log('hello'+'world');
+    </script>
+    <!-- jsフォルダのメインjsを読み込みたい場合は以下のようにする -->
+    <script src="js/main.js"></script>
+</body>
+</html>

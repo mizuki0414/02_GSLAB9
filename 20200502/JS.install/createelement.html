@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Practice</title>
+    <style>
+        body {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: skyblue;
+            cursor: pointer;
+            transition: 0.8s;
+            margin: 0 8px 8;
+            text-align: center;
+            line-height: 100px;
+            margin-right: 8px;
+            margin-bottom: 8px;
+        }
+        .circle {
+            background:pink;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+
+    <script>
+
+    'use strict';
+        for (let i = 0; i < 100; i++){
+        // div要素の定義
+        const div = document.createElement('div');
+        // box属性を付与
+        div.classList.add('box');
+        div.textContent = i;
+        // クリックされたら、circle属性に切り替える
+        div.addEventListener('click', () => {
+            div.classList.toggle('circle');
+        });
+
+        // bodyにdiv要素を追加
+        document.body.appendChild(div);
+    }
+    </script>
+</body>
+</html>

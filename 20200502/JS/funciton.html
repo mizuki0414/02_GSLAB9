@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <select id="view1"></select>
+    <select id="view2"></select>
+    <select id="view3"></select>
+</head>
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+    //     function test (){
+    //     const str = "関数を知らない";
+    //     alert(str);
+    // }
+    // console.log("test");
+    // test();
+    // test();
+    // test();
+
+    // function addition(a,b){
+    //     const n = a+b;
+    //     return n;
+    // }
+    // const num =  addition(100,300);
+    // console.log(num);
+
+    function selectBoxCreate(start,end){
+        let str = "";
+        for(let i=start;i<end; i++){
+            str += `<option>${i}</option>`;
+        }
+        return str;
+    }
+    const year = selectBoxCreate(1970,3000);
+    const month = selectBoxCreate(1,13);
+    const date = selectBoxCreate(1,32);
+
+    $("#view1").html(year);
+    $("#view2").html(month);
+    $("#view3").html(date);
+    </script>
+</body>
+</html>
