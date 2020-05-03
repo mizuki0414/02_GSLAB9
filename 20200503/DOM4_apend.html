@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button>Run</button>
+    <ul>
+        <li>item0</li>
+        <li>item1</li>
+    </ul>
+    <script>
+        // Append
+        // 複製したいときはclonenodeを使おう
+        document.querySelector('button').addEventListener('click', () => {
+            const item2 = document.createElement('li');
+            item2.textContent = 'item 2';
+            const ul = document.querySelector('ul');
+            ul.appendChild(item2);
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="target">ドットインストール</h1>
+    <p>こんにちは、こんにちは</p>
+    <p>こんにちは、こんにちは</p>
+    <p>こんにちは、こんにちは</p>
+</body>
+    <script>
+        function update() {
+            // document.querySelector('h1').textContent = 'Changed!';
+            // document.querySelector('#target').textContent = 'Changed!';
+            document.getElementById('target').textContent = 'Changed!';
+            // 以下のquerySelectorは一つの要素の書き換えのみを実施する。
+            // document.querySelector('p').textContent = 'Changed!';
+            // 全ての要素を取得する為には、allを使う。
+            // document.querySelectorAll('p')[1].textContent = 'Changed!';
+            document.querySelectorAll('p').forEach((p, index) => {
+                p.textContent = `${index}番目のpです！`
+            });
+        }
+        setTimeout (update, 1000);
+    </script>
+</html>

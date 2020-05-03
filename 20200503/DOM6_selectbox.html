@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <select>
+        <option>赤</option>
+        <option>青</option>
+        <option>黄</option>
+    </select>
+    <button>Add</button>
+    <ul></ul>
+
+    <script>
+        document.querySelector('button').addEventListener('click', () => {
+            const li = document.createElement('li');
+            const color = document.querySelector('select');
+            li.textContent = `${color.value} - ${color.selectedIndex}`;
+            document.querySelector('ul').appendChild(li);
+        });
+    </script>
+</body>
+</html>

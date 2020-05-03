@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button>add</button>
+    <script>
+        document.querySelector('button').addEventListener('dblclick', () => {
+            console.log('dblclick');
+        });
+        // マウスを動かしたら、座標表示
+        document.addEventListener('mousemove', e => {
+            console.log(e.clientX, e.clientY);
+        });
+        // キーボードを押したら、キーが表示される
+        document.addEventListener('keydown', e => {
+            console.log(e.key);
+        });
+    </script>
+</body>
+</html>

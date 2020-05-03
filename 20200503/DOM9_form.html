@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <textarea></textarea>
+    <script>
+        const text = document.querySelector('textarea');
+        // テキストエリアをクリックしたとき
+        text.addEventListener('focus', () =>{
+            console.log('focus');
+        });
+        // テキストエリアでないところをクリックしたとき
+        text.addEventListener('blur', () =>{
+            console.log('blur');
+        });
+        // 入力された文字数を表示するとき
+        text.addEventListener('input', () => {
+            console.log(text.value.length);
+        });
+    </script>
+</body>
+</html>
