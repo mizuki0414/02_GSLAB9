@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 以下のようにプロパティの中に、入っている関数をメソッドと呼ぶ
+        const posts = [
+            {
+                text: 'Javascriptの勉強中',
+                likeCount: 0,
+                // プロパティの値を関数にした場合、メソッドと呼ぶ
+                // show: function () {
+                //     console.log(`${this.text} - ${this.likecount}イイね！`);
+                // },
+                show() {
+                    console.log(`${this.text} - ${this.likeCount}イイね！`);
+                },
+            },
+            {
+                text: 'Programing楽しい!',
+                likeCount: 0,
+                show() {
+                    console.log(`${this.text} - ${this.likeCount}イイね！`);
+                },
+            },
+        ];
+        posts[0].show();
+        posts[1].show();
+    </script>
+</body>
+</html>

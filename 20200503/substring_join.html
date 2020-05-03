@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        'use strict';
+        const str = 'hello';
+        // str.substring(開始位置、終了位置)
+        const l = str.substring(2, 4);
+        console.log(l);
+        // joinで文字列をつなげる
+        const d = [2019, 11, 14];
+        console.log(d.join('/'));
+        // 分割
+        const t = '17:08:24';
+        const [hour, minute, second] = t.split(':');
+        console.log(hour);
+        console.log(minute);
+        console.log(second);
+    </script>
+</body>
+</html>

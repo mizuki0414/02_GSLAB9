@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // テンプレート化されたメソッドをクラス、それを実値にした物がインスタンス
+        class Post { //親クラス
+            constructor(text){
+                this.text = text;
+                this.likeCount = 0;
+            }
+            show() {
+                console.log(`${this.text} - ${this.likeCount}イイね!`);
+            }
+            like() {
+                this.likeCount++;
+                this.show();
+            }
+            // 静的メソッド
+            static showInfo() {
+                console.log('Post Class version 1.0');
+            }
+        }
+        class SponsoredPost extends Post { //子クラス
+            constructor(text, sponsor){
+                super(text);
+                this.sponsor = sponsor;
+            }
+            show() {
+                console.log(`${this.text} - ${this.likeCount}イイね!`);
+                console.log(`... sponsored by ${this.sponsor}`);
+            }
+            like() {
+                this.likeCount++;
+                this.show();
+            }
+            // 静的メソッド
+            static showInfo() {
+                console.log('Post Class version 1.0');
+            }
+        }
+        const posts = [
+            new Post('Javascriptの勉強中'),
+            new Post('プログラミング楽しい！'),
+            new SponsoredPost('3min動画でマスターしよう。','dotinstall')
+        ];
+        posts[2].like();
+    </script>
+</body>
+</html>

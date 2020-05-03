@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // forEachを使って、Key,valueの値を取得してきている
+        const point = {
+            x: 100,
+            y: 180,
+        };
+        const keys = Object.keys(point);
+        keys.forEach(Key => {
+            console.log(`Key: ${Key} Value: ${point[Key]}`);
+        });
+
+        // let x,y
+        let x = [1, 2];
+        // このようにスプレッド構文で代入ができる
+        let y = [...x];
+        x[0] = 5;
+        console.log(x); //[5, 2]
+        console.log(y); //[1, 2]
+    </script>
+</body>
+</html>

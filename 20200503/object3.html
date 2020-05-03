@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 例えばそれぞれ別のオブジェクトがあったとして
+        const otherProps = {
+            r: 4,
+            color: 'red',
+        };
+        const point = {
+            x: 100,
+            y: 180,
+            ...otherProps,
+        };
+        // と上記のようにスプレッド記法で書いてやるだけで、OK
+        // console.log(point);
+        // 以下のように再代入も可能
+        const {x, r, ...others} = point;
+        console.log(x);
+        console.log(r);
+        console.log(others);
+
+    </script>
+</body>
+</html>

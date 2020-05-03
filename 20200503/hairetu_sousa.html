@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 配列の操作は、
+        // ①先頭に要素を追加、unshift()。③削除はshift()
+        // ②要素の最後尾に要素を追加、push()。④pop()を実行する
+        const scores = [80, 90, 40];
+        // 要素の末尾に追加
+        scores.push(60, 50);
+        // 先頭を削除
+        scores.shift();
+        // 要素の1の間に、40,50を挿入し、元々要素1であった40を削除
+        scores.splice(1, 1, 40, 50);
+        for (let i = 0; i < scores.length; i++){
+            console.log(`Score: ${scores[i]}`);
+        }
+    </script>
+</body>
+</html>

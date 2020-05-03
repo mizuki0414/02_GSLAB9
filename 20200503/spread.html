@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // spread構文...何とかで配列を代入する事ができる。
+        {
+            const otherScores = [10, 20];
+            const scores = [80, 90, 40, 70, ...otherScores];
+            console.log(scores);
+
+        // 例えば関数があったとして以下のような使い方ができる。
+            function sum(a,b) {
+                console.log(a + b);
+            }
+            sum(...otherScores);
+            // sum(10, 20);
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const scores = [10, 3, 9];
+        let sum = 0;
+        // 以下はfor Eachで要素を足す
+        scores.forEach(score => {
+            sum += score;
+        });
+        // sumから平均値を算出する
+        const avg = sum / scores.length;
+        console.log(sum);
+        console.log(avg);
+        // Math.floorは切り捨て
+        console.log(Math.floor(avg)); 7
+        // Math.ceilは切り上げ、四捨五入をするときは、round、丸めはtoFixed
+    </script>
+</body>
+</html>

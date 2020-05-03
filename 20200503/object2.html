@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const point = {
+            x: 100,
+            y: 180,
+        };
+
+        point.x = 120;
+        // 新しいキーを設定しても、作成されるので、OK
+        point.z = 90;
+        delete point.y;
+        console.log(point);
+
+        // console.log(point.x);
+        // console.log(point['y']);
+
+    </script>
+</body>
+</html>
