@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <script src="js/jquery-2.1.3.min.js"></script>
+    <link rel="stylesheet" href="css/sample.css">
+    <title>じゃんけん</title>
+</head>
+<body>
+    <header>
+        <h1>じゃんけん</h1>
+    </header>
+    <main>
+        <ul>
+            <li id="gu_btn">グー</li>
+            <li id="cho_btn">チョキ</li>
+            <li id="par_btn">パー</li>
+        </ul>
+        <div>コンピュータの出した手は？「<span id="pc_hands">なに？</span>」</div>
+        <div id="judgment">勝ち</div>
+    </main>
+    <footer></footer>
+    <!-- 以下、JavaScript -->
+    <script>
+    // 1．乱数を生成(1~3を生成)
+    function rand(){
+        var num = Math.floor(Math.random() * 3 + 1);
+        return num;
+    }
+    // 2．各ボタンが押された場合のアクションを条件分岐で表現
+    let pc_hands = document.querySelector("#pc_hands");
+    let judgment = document.querySelector("#judgment");
+    // 2－1．グーの場合
+    let gu_btn = document.querySelector("#gu_btn");
+    gu_btn.onclick = function(){
+        let cmphand = rand();
+        // コンピューターがグー
+        if(cmphand == 1){
+            pc_hands.innerHTML = "コンピューター:グー";
+            judgment.innerHTML = "引き分け";
+        }
+        // コンピューターがチョキ
+        if(cmphand == 2){
+            pc_hands.innerHTML = "コンピューター:チョキ";
+            judgment.innerHTML = "あなたの勝ち";
+        }
+        // コンピューターがパー
+        if(cmphand == 3){
+            pc_hands.innerHTML = "コンピューター:パー";
+            judgment.innerHTML = "あなたの負け";
+        }
+    }
+    // 2－2．チョキの場合
+    let cho_btn = document.querySelector("#cho_btn");
+    cho_btn.onclick = function(){
+        let cmphand = rand();
+        // コンピューターがグー
+        if(cmphand == 1){
+            pc_hands.innerHTML = "コンピューター:グー";
+            judgment.innerHTML = "あなたの負け";
+        }
+        // コンピューターがチョキ
+        if(cmphand == 2){
+            pc_hands.innerHTML = "コンピューター:チョキ";
+            judgment.innerHTML = "引き分け";
+        }
+        // コンピューターがパー
+        if(cmphand == 3){
+            pc_hands.innerHTML = "コンピューター:パー";
+            judgment.innerHTML = "あなたの勝ち";
+        }
+    }
+    // 2－3．パーの場合
+    let par_btn = document.querySelector("#par_btn");
+    par_btn.onclick = function(){
+        let cmphand = rand();
+        // コンピューターがグー
+        if(cmphand == 1){
+            pc_hands.innerHTML = "コンピューター:グー";
+            judgment.innerHTML = "あなたの勝ち";
+        }
+        // コンピューターがチョキ
+        if(cmphand == 2){
+            pc_hands.innerHTML = "コンピューター:チョキ";
+            judgment.innerHTML = "あなたの負け";
+        }
+        // コンピューターがパー
+        if(cmphand == 3){
+            pc_hands.innerHTML = "コンピューター:パー";
+            judgment.innerHTML = "引き分け";
+        }
+    }
+    </script>
+</body>
+</html>
