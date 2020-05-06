@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReactPractice</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<body>
+    <div id="root"></div>
+    <script type="text/babel">
+    (() => {
+            // function Counter(props) {
+            //     return <li style={{backgroundColor:props.color}}>0</li>;
+            // }
+            // Classを付与してみよう,stateを使う為には、classを使う必要がある。
+            // class Counter extends React.Component {
+            //     // ここでインスタンスを作っている
+            //     // Reactでは、thisを宣言するには、constructorの中でないとダメ宣言する場合には、this.setStateを実施する
+            //     constructor(props) {
+            //         super(props);
+            //         this.state = {
+            //             count: 0,
+            //             message: 'hello!'
+            //         };
+            //         this.countUp = this.countUp.bind(this);
+            //     };
+            //     countUp() {
+            //         // this.state.count = this.state.count + 1;
+            //         // 以下のように書くこともできるが、タマに上手く動かないこともあるので、、、
+            //         // this.setState({
+            //         //     count: this.state.cout +1
+            //         // });
+            //         this.setState (prevState => {
+            //             return {
+            //                 count: prevState.count +1
+            //             }
+            //         });
+            //     }
+            //     render() {
+            //         return (
+            //             // <li style={{backgroundColor:this.props.color}} onClick={this.countUp}>
+            //             //     {this.state.count}
+            //             // </li>
+            //         );
+            //     };
+            // }
+            function Counter(props) {
+                return (
+                <li style={{backgroundColor:props.counter.color}} onClick={() => props.countUp(props.counter)}>
+                    {props.counter.id}:{props.counter.count}
+                </li>
+                );
+            }
+
+            function CounterList(props) {
+                const counters = props.counters.map(counter => {
+                return (
+                    <Counter
+                    counter={counter}
+                    key={counter.id}
+                    countUp={props.countUp}
+                    />
+                );
+                });
+                return (
+                <ul>
+                    {counters}
+                </ul>
+                );
+            }
+
+            class App extends React.Component {
+                constructor() {
+                super();
+                this.state = {
+                    counters: [
+                    {id: 'A', count: 0, color: 'tomato'},
+                    {id: 'B', count: 0, color: 'skyblue'},
+                    {id: 'C', count: 0, color: 'limegreen'},
+                    {id: 'D', count: 0, color: 'grey'},
+                    {id: 'E', count: 0, color: 'pink'},
+                    {id: 'F', count: 0, color: 'blue'}
+                    ],
+                    total: 0
+                };
+                    this.countUp = this.countUp.bind(this);
+                }
+                countUp(counter) {
+                this.setState(prevState => {
+                    const counters = prevState.counters.map(counter => {
+                    return {id: counter.id, count: counter.count, color: counter.color};
+                    });
+                    const pos = counters.map(counter => {
+                    return counter.id;
+                    }).indexOf(counter.id);
+                    counters[pos].count++;
+                    return {
+                    counters: counters,
+                    total: prevState.total +1
+                    };
+                });
+                }
+                render() {
+                return (
+                    <div className="container">
+                    <CounterList
+                        counters={this.state.counters}
+                        countUp={this.countUp}
+                    />
+                    <div>TOTAL INVENTORY: {this.state.total}</div>
+                    </div>
+                );
+                }
+            }
+                    // ReactDOM.render(
+                    // 一旦共通要素を置く為カット
+                    // <div class="conteiner">
+                    //     <ul>
+                    //         <Counter color="tomato"/>
+                    //         <Counter color="skyblue"/>
+                    //         <Counter color="limegreen"/>
+                    //     </ul>
+                    //     <div>TOTAL INVENTORY: 3 </div>
+                    // </div>,
+                    // <App/>,
+                    // document.getElementById('root')
+                    // それから React では今回のように state を持つ Component は最小限にしてあげて、その他の Component には極力値を持たせないという設計が良いとされているので、それも意識しておくと良いかと思います。
+                    ReactDOM.render(
+                    <App/>,
+                    document.getElementById('root')
+                    );
+                })();
+    </script>
+</body>
+</html>
