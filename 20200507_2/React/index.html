@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>React Todo App</title>
+  <link rel="stylesheet" href="./CSS/style.css">
+  <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+    <!-- ①rootのdiv要素を作成する。 -->
+    <div id="root"></div>
+    <script type="text/babel">
+    (() => {
+        const todos = [
+            {id: 0,title: 'Task 0', isDone: false},
+            {id: 1,title: 'Task 1', isDone: false},
+            {id: 2,title: 'Task 2', isDone: true}
+        ];
+
+        //⑥ToDoListにstateを持たせてあげる
+        function TodoList(props) {
+            //⑦todosを定義し、受け取ったプロパティに基づいて、下のreturn（ul）の中に注入する。
+            const todos = props.todos.map(todo => {
+                return (
+                    <li key={todo.id}>{todo.title}</li>
+                );
+            });
+
+            return (
+                <ul>
+                    {todos}
+                </ul>
+            );
+        }
+        //③AppというReactComponentを拡張したクラスを定義する、
+        class App extends React.Component {
+            //⑤Constructorを宣言する。
+            constructor() {
+                super();
+                this.state = {
+                    todos: todos
+                };
+            }
+            //④rendermethodで表示させる内容をfixする。これがインスタンス？んでTodolistがある体でレンダーする
+            render() {
+                return (
+                    <div>
+                        <h1>My Todos</h1>
+                        <Todolist todos={this.state.todos}/>
+                    </div>
+                );
+            }
+        }
+        //②ReactDOMレンダーでdiv要素にhtmlを注入
+        ReactDOM.render(
+            <App/>,
+            document.getElementById('root')
+        );
+    })();
+    </script>
+</body>
+</html>

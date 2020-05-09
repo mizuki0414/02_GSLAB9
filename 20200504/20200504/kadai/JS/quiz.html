@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>クイズ練習（複数）</title>
+</head>
+
+<body>
+    <header>
+        <h1>クイズ練習(複数)</h1>
+    </header>
+    <main>
+        <p id="quest">ここに問題が表示されます。</p>
+        <p>
+            <input type="radio" name="toi" value="1"><span id="toi1">選択肢1</span>
+            <input type="radio" name="toi" value="2"><span id="toi2">選択肢2</span>
+            <input type="radio" name="toi" value="3"><span id="toi3">選択肢3</span>
+        </p>
+    </main>
+    <footer>フッター</footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        // いかに配列を記述する
+        const qs = [
+            "問１",
+            "問2",
+            "問3"
+        ];
+        // 選択肢（多重配列）
+        const toi = [
+            ["A1","A2","A3"],
+            ["B1","B2","B3"],
+            ["C1","C2","C3"]
+        ];
+        // 答え
+        const ans=[1,2,3];
+
+        // 1.最初の問題文＆回答選択肢＆回答値を設定
+        let i = 0;
+        function q(i){
+        $("#quest").html(qs[i]);
+        $("#toi1").html(toi[i][0]);
+        $("#toi2").html(toi[i][1]);
+        $("#toi3").html(toi[i][2]);
+        }
+
+        // 最初の問題を表示
+        q(i);
+
+        //  2.ラジオボタンをクリックしたらイベント
+        $("[name=toi]").on("click",function(){
+            if( $(this).val() == ans[i] ){
+                alert("正解");
+            } else {
+                alert("間違");
+            }
+            i++;
+            $("#quest").html(qs[i]);
+            q(i);
+        });
+
+    </script>
+</body>
+</html>

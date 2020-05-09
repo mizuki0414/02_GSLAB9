@@ -1,0 +1,55 @@
+body {
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+    width: 300px;
+    margin: auto;
+}
+
+.container h1 {
+    font-size: 16px;
+    border-bottom: 1px solid #ddd;
+    padding: 16px 0;
+}
+
+.container ul {
+    padding: 0;
+    list-style: none;
+}
+
+.container li {
+    line-height: 1.5;
+}
+
+.container input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+h1 > span {
+    color: #ccc;
+    font-size: 12px;
+    font-weight: normal;
+    margin-left: 5px;
+}
+
+h1 > button {
+    float: right;
+}
+
+.cmd {
+    font-size: 12px;
+    cursor: pointer;
+    color: #08c;
+}
+
+.container input[type="text"] {
+    padding: 2px;
+    margin-right: 5px;
+}
+
+.done {
+    text-decoration: line-through;
+    color: g;
+}

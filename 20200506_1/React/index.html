@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>React Todo App</title>
+  <link rel="stylesheet" href="./CSS/style.css">
+  <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+    <!-- ①rootのdiv要素を作成する。 -->
+    <div id="root"></div>
+    <script type="text/babel">
+    (() => {
+
+        const todos = [];
+
+        function TodoHeader(props) {
+            const remaining = props.todos.filter(todo => {
+                return !todo.isDone;
+            });
+
+            return (
+                <h1>
+                    <button onClick={props.purge}>Purge</button>
+                    My Todos
+                    <span>({remaining.length}/{props.todos.length})</span>
+                </h1>
+            );
+        }
+
+        //⑨TodoItemのfunctionを用意してあげる
+        function TodoItem(props) {
+            return (
+                <li key={props.todo.id}>
+                    <label>
+                        <input type="checkbox"
+                            checked={props.todo.isDone}
+                            onChange={() => props.checkTodo(props.todo)}
+                        />
+                        <span className={props.todo.isDone ? 'done' : ''}>
+                            {props.todo.title}
+                        </span>
+                    </label>
+                    <span className="cmd"
+                            onClick={() => props.deleteTodo(props.todo)}>[x]</span>
+                </li>
+            );
+        }
+
+        //⑥ToDoListにstateを持たせてあげる
+        function TodoList(props) {
+            //⑦todosを定義し、受け取ったプロパティに基づいて、下のreturn（ul）の中に注入する。
+            const todos = props.todos.map(todo => {
+                return (
+                    // ⑧拡張し易いように、componentにする。
+                    // <li key={todo.id}>{todo.title}</li>
+                    <TodoItem
+                        // key={todo.id}
+                        todo={todo}
+                        checkTodo={props.checkTodo}
+                        deleteTodo={props.deleteTodo}
+                    />
+                );
+            });
+            return (
+                <ul>
+                    {props.todos.length ? todos : <li>Nothing to do!</li>}
+                </ul>
+            );
+        }
+
+        function TodoForm(props) {
+            return (
+                <form onSubmit={props.addTodo}>
+                    <input type="text" value={props.item} onChange={props.updateItem}/>
+                    <input type="submit" value="Add"/>
+                </form>
+            );
+        }
+
+        function getUniqueId() {
+            return new Date().getTime().toString(36) + '-' + Math.random().toString(36);
+        }
+
+        //③AppというReactComponentを拡張したクラスを定義する、
+        class App extends React.Component {
+            //⑤Constructorを宣言する。
+            constructor() {
+                super();
+                this.state = {
+                    todos: todos,
+                    item: ''
+                };
+                this.checkTodo = this.checkTodo.bind(this);
+                this.deleteTodo = this.deleteTodo.bind(this);
+                this.updateItem = this.updateItem.bind(this);
+                this.addTodo = this.addTodo.bind(this);
+                this.purge = this.purge.bind(this);
+            }
+
+            purge() {
+                if (!confirm('are you sure?')) {
+                    return;
+                }
+
+                const todos = this.state.todos.filter(todo => {
+                    return !todo.isDone;
+                    });
+                    this.setState({
+                        todos: todos
+                    });
+            }
+
+            addTodo(e) {
+                e.preventDefault();
+
+                if(this.state.item.trim() === '') {
+                    return;
+                }
+
+                const item = {
+                    id: getUniqueId(),
+                    title: this.state.item,
+                    isDone: false
+                };
+                const todos = this.state.todos.slice();
+                todos.push(item);
+                this.setState({
+                    todos: todos,
+                    item: ''
+                });
+            }
+
+            deleteTodo(todo) {
+                if (!confirm('are you sure?')) {
+                    return;
+                }
+                const todos = this.state.todos.slice();
+                const pos = this.state.todos.indexOf(todo);
+
+                todos.splice(pos, 1);
+                this.setState({
+                    todos: todos
+                });
+            }
+
+            checkTodo(todo) {
+                const todos = this.state.todos.map(todo =>{
+                    return {id: todo.id, title: todo.title, isDone: todo.isDone};
+                });
+
+                const pos = this.state.todos.map(todo =>{
+                    return todo.id;
+                }).indexOf(todo.id);
+
+                todos[pos].isDone = !todos[pos].isDone;
+                    this.setState({
+                        todos: todos
+                    });
+                }
+
+                componentDidUpdate() {
+                    localStorage.setItem('todos', JSON.stringify(this.state.todos));
+                }
+                componentDidMount() {
+                    this.setState({
+                        todos: JSON.parse(localStrage.getItem('todos')) || []
+                    });
+                }
+
+            updateItem(e) {
+                this.setState({
+                    item: e.target.value
+                });
+                }
+
+            //④rendermethodで表示させる内容をfixする。これがインスタンス？んでTodolistがある体でレンダーする
+            render() {
+                return (
+                    <div className="container">
+                        <TodoHeader
+                            todos={this.state.todos}
+                            purge={this.purge}
+                        />
+                        <TodoList
+                            todos={this.state.todos}
+                            checkTodo={this.checkTodo}
+                            deleteTodo={this.deleteTodo}
+                        />
+                        <TodoForm
+                            item={this.state.item}
+                            updateItem={this.updateItem}
+                            addTodo={this.addTodo}
+                        />
+                    </div>
+                );
+            }
+        }
+            //②ReactDOMレンダーでdiv要素にhtmlを注入
+            ReactDOM.render(
+                <App/>,
+                document.getElementById('root')
+            );
+    })();
+    </script>
+</body>
+</html>
