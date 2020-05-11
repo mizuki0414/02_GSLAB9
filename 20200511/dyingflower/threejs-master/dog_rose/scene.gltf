@@ -1,0 +1,2969 @@
+{
+  "accessors": [
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 13626,
+      "max": [
+        1.3597056865692139,
+        0.92762666940689087,
+        2.859748363494873
+      ],
+      "min": [
+        -0.60762494802474976,
+        -0.7536737322807312,
+        0.078975081443786621
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 163512,
+      "componentType": 5126,
+      "count": 13626,
+      "max": [
+        0.99990350008010864,
+        0.99999290704727173,
+        0.99846869707107544
+      ],
+      "min": [
+        -0.99997186660766602,
+        -0.99960917234420776,
+        -0.9989248514175415
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 4,
+      "componentType": 5126,
+      "count": 13626,
+      "max": [
+        0.9999268651008606,
+        0.99963283538818359,
+        0.99975889921188354,
+        1
+      ],
+      "min": [
+        -0.99964570999145508,
+        -0.99975323677062988,
+        -0.99999821186065674,
+        -1
+      ],
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 13626,
+      "max": [
+        1.010699987411499,
+        1
+      ],
+      "min": [
+        0,
+        0
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 109008,
+      "componentType": 5126,
+      "count": 13626,
+      "max": [
+        0,
+        0
+      ],
+      "min": [
+        0,
+        0
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 218016,
+      "componentType": 5126,
+      "count": 13626,
+      "max": [
+        1,
+        1
+      ],
+      "min": [
+        1,
+        0
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5125,
+      "count": 54759,
+      "max": [
+        13625
+      ],
+      "min": [
+        0
+      ],
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 327024,
+      "componentType": 5126,
+      "count": 7564,
+      "max": [
+        1.3109643459320068,
+        0.89884573221206665,
+        3.0481936931610107
+      ],
+      "min": [
+        -0.56375670433044434,
+        -0.75586646795272827,
+        0.2943994402885437
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 417792,
+      "componentType": 5126,
+      "count": 7564,
+      "max": [
+        0.99992358684539795,
+        0.9997260570526123,
+        0.98136663436889648
+      ],
+      "min": [
+        -0.99992358684539795,
+        -0.99970245361328125,
+        -0.99263668060302734
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 4,
+      "byteOffset": 218016,
+      "componentType": 5126,
+      "count": 7564,
+      "max": [
+        0.99929291009902954,
+        0.99991017580032349,
+        0.99846488237380981,
+        1
+      ],
+      "min": [
+        -0.99749135971069336,
+        -0.99999237060546875,
+        -0.99845403432846069,
+        -1
+      ],
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 327024,
+      "componentType": 5126,
+      "count": 7564,
+      "max": [
+        0.99119997024536133,
+        1.0010000467300415
+      ],
+      "min": [
+        0.0046000001020729542,
+        0.0076000001281499863
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 387536,
+      "componentType": 5126,
+      "count": 7564,
+      "max": [
+        0,
+        0
+      ],
+      "min": [
+        0,
+        0
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 448048,
+      "componentType": 5126,
+      "count": 7564,
+      "max": [
+        1,
+        1
+      ],
+      "min": [
+        1,
+        0
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 219036,
+      "componentType": 5125,
+      "count": 35922,
+      "max": [
+        7563
+      ],
+      "min": [
+        0
+      ],
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 508560,
+      "componentType": 5126,
+      "count": 5136,
+      "max": [
+        1.0825016498565674,
+        0.54127532243728638,
+        2.7420227527618408
+      ],
+      "min": [
+        -0.26712274551391602,
+        -0.54223936796188354,
+        0.40688201785087585
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 570192,
+      "componentType": 5126,
+      "count": 5136,
+      "max": [
+        0.99987208843231201,
+        0.99973613023757935,
+        0.9966050386428833
+      ],
+      "min": [
+        -0.99994444847106934,
+        -0.9998009204864502,
+        -0.99994868040084839
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 4,
+      "byteOffset": 339040,
+      "componentType": 5126,
+      "count": 5136,
+      "max": [
+        0.99881887435913086,
+        0.99996703863143921,
+        0.99950939416885376,
+        1
+      ],
+      "min": [
+        -0.99995303153991699,
+        -0.99984890222549438,
+        -0.99992173910140991,
+        -1
+      ],
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 508560,
+      "componentType": 5126,
+      "count": 5136,
+      "max": [
+        0.99980002641677856,
+        0.99950003623962402
+      ],
+      "min": [
+        0.031000001356005669,
+        0.00050000002374872565
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 549648,
+      "componentType": 5126,
+      "count": 5136,
+      "max": [
+        0,
+        0
+      ],
+      "min": [
+        0,
+        0
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 590736,
+      "componentType": 5126,
+      "count": 5136,
+      "max": [
+        1,
+        1
+      ],
+      "min": [
+        1,
+        1
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 362724,
+      "componentType": 5125,
+      "count": 19719,
+      "max": [
+        5135
+      ],
+      "min": [
+        0
+      ],
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 631824,
+      "componentType": 5126,
+      "count": 5318,
+      "max": [
+        1.1436501741409302,
+        0.614113450050354,
+        2.8409714698791504
+      ],
+      "min": [
+        -0.45195576548576355,
+        -0.67835724353790283,
+        -0.16718293726444244
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 695640,
+      "componentType": 5126,
+      "count": 5318,
+      "max": [
+        0.9991302490234375,
+        0.99987620115280151,
+        0.9999728798866272
+      ],
+      "min": [
+        -0.99980199337005615,
+        -0.99997502565383911,
+        -0.99985826015472412
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 4,
+      "byteOffset": 421216,
+      "componentType": 5126,
+      "count": 5318,
+      "max": [
+        0.99981784820556641,
+        0.99986034631729126,
+        0.99971640110015869,
+        1
+      ],
+      "min": [
+        -0.99925839900970459,
+        -0.99995046854019165,
+        -0.99987298250198364,
+        -1
+      ],
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 631824,
+      "componentType": 5126,
+      "count": 5318,
+      "max": [
+        1,
+        3.2114238739013672
+      ],
+      "min": [
+        -0.99344825744628906,
+        0
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 674368,
+      "componentType": 5126,
+      "count": 5318,
+      "max": [
+        1,
+        1
+      ],
+      "min": [
+        0.99000000953674316,
+        0.99000000953674316
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 716912,
+      "componentType": 5126,
+      "count": 5318,
+      "max": [
+        1,
+        1
+      ],
+      "min": [
+        1,
+        0
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 441600,
+      "componentType": 5125,
+      "count": 24939,
+      "max": [
+        5317
+      ],
+      "min": [
+        0
+      ],
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 759456,
+      "componentType": 5126,
+      "count": 20,
+      "max": [
+        0.46402871608734131,
+        -0.032995942980051041,
+        2.3907339572906494
+      ],
+      "min": [
+        0.29996025562286377,
+        -0.099483989179134369,
+        0.56658506393432617
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 759696,
+      "componentType": 5126,
+      "count": 20,
+      "max": [
+        0.91581833362579346,
+        0.80855756998062134,
+        0.99349409341812134
+      ],
+      "min": [
+        -0.98707425594329834,
+        -0.99627763032913208,
+        0.016321660950779915
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 4,
+      "byteOffset": 506304,
+      "componentType": 5126,
+      "count": 20,
+      "max": [
+        -0.031928185373544693,
+        0.55768024921417236,
+        0.86010074615478516,
+        1
+      ],
+      "min": [
+        -0.66760891675949097,
+        -0.88380640745162964,
+        -0.99939686059951782,
+        1
+      ],
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 759456,
+      "componentType": 5126,
+      "count": 20,
+      "max": [
+        1,
+        0.99491071701049805
+      ],
+      "min": [
+        0.020253479480743408,
+        0.0050892531871795654
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 759616,
+      "componentType": 5126,
+      "count": 20,
+      "max": [
+        1,
+        0.99491071701049805
+      ],
+      "min": [
+        0.020253479480743408,
+        0.0050892531871795654
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 759776,
+      "componentType": 5126,
+      "count": 20,
+      "max": [
+        1,
+        0
+      ],
+      "min": [
+        1,
+        0
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 541356,
+      "componentType": 5125,
+      "count": 54,
+      "max": [
+        19
+      ],
+      "min": [
+        0
+      ],
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 5,
+      "componentType": 5126,
+      "count": 144,
+      "max": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0.4519520103931427,
+        0.67835301160812378,
+        0.16649998724460602,
+        1
+      ],
+      "min": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        -1.1436500549316406,
+        -0.61410903930664062,
+        -2.8387100696563721,
+        1
+      ],
+      "type": "MAT4"
+    },
+    {
+      "bufferView": 0,
+      "componentType": 5123,
+      "count": 13626,
+      "max": [
+        143,
+        143,
+        91,
+        91
+      ],
+      "min": [
+        2,
+        4,
+        91,
+        91
+      ],
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 4,
+      "byteOffset": 506624,
+      "componentType": 5126,
+      "count": 13626,
+      "max": [
+        1,
+        0.49990144371986389,
+        0,
+        0
+      ],
+      "min": [
+        0.5000985860824585,
+        0,
+        0,
+        0
+      ],
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 109008,
+      "componentType": 5123,
+      "count": 7564,
+      "max": [
+        131,
+        131,
+        101,
+        101
+      ],
+      "min": [
+        2,
+        4,
+        101,
+        101
+      ],
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 4,
+      "byteOffset": 724640,
+      "componentType": 5126,
+      "count": 7564,
+      "max": [
+        1,
+        0.49997854232788086,
+        0,
+        0
+      ],
+      "min": [
+        0.50002145767211914,
+        0,
+        0,
+        0
+      ],
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 169520,
+      "componentType": 5123,
+      "count": 5136,
+      "max": [
+        142,
+        143,
+        103,
+        103
+      ],
+      "min": [
+        2,
+        4,
+        103,
+        103
+      ],
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 4,
+      "byteOffset": 845664,
+      "componentType": 5126,
+      "count": 5136,
+      "max": [
+        1,
+        0.49878105521202087,
+        0,
+        0
+      ],
+      "min": [
+        0.50121891498565674,
+        0,
+        0,
+        0
+      ],
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 210608,
+      "componentType": 5123,
+      "count": 5318,
+      "max": [
+        143,
+        143,
+        2,
+        2
+      ],
+      "min": [
+        1,
+        2,
+        2,
+        2
+      ],
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 4,
+      "byteOffset": 927840,
+      "componentType": 5126,
+      "count": 5318,
+      "max": [
+        1,
+        0.49997639656066895,
+        0,
+        0
+      ],
+      "min": [
+        0.50002366304397583,
+        0,
+        0,
+        0
+      ],
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 253152,
+      "componentType": 5123,
+      "count": 20,
+      "max": [
+        91,
+        6,
+        6,
+        6
+      ],
+      "min": [
+        6,
+        6,
+        6,
+        6
+      ],
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 4,
+      "byteOffset": 1012928,
+      "componentType": 5126,
+      "count": 20,
+      "max": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "min": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "type": "VEC4"
+    }
+  ],
+  "asset": {
+    "extras": {
+      "author": "dannysgallegos (https://sketchfab.com/dannysgallegos)",
+      "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+      "source": "https://sketchfab.com/3d-models/dog-rose-ef4f1b28ca884a0fb44abd03bc48708b",
+      "title": "Dog Rose"
+    },
+    "generator": "Sketchfab-7.93.0",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 253312,
+      "byteOffset": 0,
+      "byteStride": 8,
+      "name": "shortBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 541572,
+      "byteOffset": 253312,
+      "name": "floatBufferViews",
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 759936,
+      "byteOffset": 794884,
+      "byteStride": 8,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 759936,
+      "byteOffset": 1554820,
+      "byteStride": 12,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 1013248,
+      "byteOffset": 2314756,
+      "byteStride": 16,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 9216,
+      "byteOffset": 3328004,
+      "byteStride": 64,
+      "name": "floatBufferViews"
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 3337220,
+      "uri": "scene.bin"
+    }
+  ],
+  "extensionsRequired": [
+    "KHR_materials_pbrSpecularGlossiness"
+  ],
+  "extensionsUsed": [
+    "KHR_materials_pbrSpecularGlossiness"
+  ],
+  "images": [
+    {
+      "uri": "textures/DogRoseFrond_diffuse.png"
+    },
+    {
+      "uri": "textures/DogRoseFrond_specularGlossiness.png"
+    },
+    {
+      "uri": "textures/DogRoseFrond_normal.png"
+    },
+    {
+      "uri": "textures/DogRoseFlower_diffuse.png"
+    },
+    {
+      "uri": "textures/DogRoseFlower_specularGlossiness.png"
+    },
+    {
+      "uri": "textures/DogRoseFlower_normal.png"
+    },
+    {
+      "uri": "textures/DogRoseHip_diffuse.png"
+    },
+    {
+      "uri": "textures/DogRoseHip_specularGlossiness.png"
+    },
+    {
+      "uri": "textures/DogRoseHip_normal.png"
+    },
+    {
+      "uri": "textures/FlowerStem_06_diffuse.png"
+    },
+    {
+      "uri": "textures/FlowerStem_06_normal.png"
+    },
+    {
+      "uri": "textures/StemCap_diffuse.png"
+    },
+    {
+      "uri": "textures/StemCap_specularGlossiness.png"
+    },
+    {
+      "uri": "textures/StemCap_normal.png"
+    }
+  ],
+  "materials": [
+    {
+      "alphaCutoff": 1,
+      "alphaMode": "MASK",
+      "doubleSided": true,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "extensions": {
+        "KHR_materials_pbrSpecularGlossiness": {
+          "diffuseFactor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "diffuseTexture": {
+            "index": 0,
+            "texCoord": 0
+          },
+          "glossinessFactor": 0.14607118992176787,
+          "specularFactor": [
+            0.050000000000000003,
+            0.050000000000000003,
+            0.050000000000000003
+          ],
+          "specularGlossinessTexture": {
+            "index": 1,
+            "texCoord": 0
+          }
+        }
+      },
+      "name": "DogRoseFrond",
+      "normalTexture": {
+        "index": 2,
+        "scale": 1,
+        "texCoord": 0
+      }
+    },
+    {
+      "alphaCutoff": 1,
+      "alphaMode": "MASK",
+      "doubleSided": true,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "extensions": {
+        "KHR_materials_pbrSpecularGlossiness": {
+          "diffuseFactor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "diffuseTexture": {
+            "index": 3,
+            "texCoord": 0
+          },
+          "glossinessFactor": 0.24561737804878048,
+          "specularFactor": [
+            0.19073932926829268,
+            0.19073932926829268,
+            0.19073932926829268
+          ],
+          "specularGlossinessTexture": {
+            "index": 4,
+            "texCoord": 0
+          }
+        }
+      },
+      "name": "DogRoseFlower",
+      "normalTexture": {
+        "index": 5,
+        "scale": 1,
+        "texCoord": 0
+      }
+    },
+    {
+      "alphaCutoff": 1,
+      "alphaMode": "MASK",
+      "doubleSided": true,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "extensions": {
+        "KHR_materials_pbrSpecularGlossiness": {
+          "diffuseFactor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "diffuseTexture": {
+            "index": 6,
+            "texCoord": 0
+          },
+          "glossinessFactor": 0.14198363175497739,
+          "specularFactor": [
+            0.050000000000000003,
+            0.050000000000000003,
+            0.050000000000000003
+          ],
+          "specularGlossinessTexture": {
+            "index": 7,
+            "texCoord": 0
+          }
+        }
+      },
+      "name": "DogRoseHip",
+      "normalTexture": {
+        "index": 8,
+        "scale": 1,
+        "texCoord": 0
+      }
+    },
+    {
+      "doubleSided": true,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "extensions": {
+        "KHR_materials_pbrSpecularGlossiness": {
+          "diffuseFactor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "diffuseTexture": {
+            "index": 9,
+            "texCoord": 0
+          },
+          "glossinessFactor": 0.16746652689496475,
+          "specularFactor": [
+            0.050000000000000003,
+            0.050000000000000003,
+            0.050000000000000003
+          ]
+        }
+      },
+      "name": "FlowerStem_06",
+      "normalTexture": {
+        "index": 10,
+        "scale": 1,
+        "texCoord": 0
+      }
+    },
+    {
+      "doubleSided": true,
+      "extensions": {
+        "KHR_materials_pbrSpecularGlossiness": {
+          "diffuseFactor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "diffuseTexture": {
+            "index": 11,
+            "texCoord": 0
+          },
+          "glossinessFactor": 0.16746652689496475,
+          "specularFactor": [
+            0.050000000000000003,
+            0.050000000000000003,
+            0.050000000000000003
+          ],
+          "specularGlossinessTexture": {
+            "index": 12,
+            "texCoord": 0
+          }
+        }
+      },
+      "name": "StemCap",
+      "normalTexture": {
+        "index": 13,
+        "scale": 1,
+        "texCoord": 0
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "DogRose_Med_DogRoseFrond_0",
+      "primitives": [
+        {
+          "attributes": {
+            "JOINTS_0": 36,
+            "NORMAL": 1,
+            "POSITION": 0,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3,
+            "TEXCOORD_1": 4,
+            "TEXCOORD_2": 5,
+            "TEXCOORD_3": 3,
+            "TEXCOORD_4": 3,
+            "WEIGHTS_0": 37
+          },
+          "indices": 6,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "DogRose_Med_DogRoseFlower_0",
+      "primitives": [
+        {
+          "attributes": {
+            "JOINTS_0": 38,
+            "NORMAL": 8,
+            "POSITION": 7,
+            "TANGENT": 9,
+            "TEXCOORD_0": 10,
+            "TEXCOORD_1": 11,
+            "TEXCOORD_2": 12,
+            "TEXCOORD_3": 10,
+            "TEXCOORD_4": 10,
+            "WEIGHTS_0": 39
+          },
+          "indices": 13,
+          "material": 1,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "DogRose_Med_DogRoseHip_0",
+      "primitives": [
+        {
+          "attributes": {
+            "JOINTS_0": 40,
+            "NORMAL": 15,
+            "POSITION": 14,
+            "TANGENT": 16,
+            "TEXCOORD_0": 17,
+            "TEXCOORD_1": 18,
+            "TEXCOORD_2": 19,
+            "TEXCOORD_3": 17,
+            "TEXCOORD_4": 17,
+            "WEIGHTS_0": 41
+          },
+          "indices": 20,
+          "material": 2,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "DogRose_Med_FlowerStem_06_0",
+      "primitives": [
+        {
+          "attributes": {
+            "JOINTS_0": 42,
+            "NORMAL": 22,
+            "POSITION": 21,
+            "TANGENT": 23,
+            "TEXCOORD_0": 24,
+            "TEXCOORD_1": 25,
+            "TEXCOORD_2": 26,
+            "TEXCOORD_3": 24,
+            "WEIGHTS_0": 43
+          },
+          "indices": 27,
+          "material": 3,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "DogRose_Med_StemCap_0",
+      "primitives": [
+        {
+          "attributes": {
+            "JOINTS_0": 44,
+            "NORMAL": 29,
+            "POSITION": 28,
+            "TANGENT": 30,
+            "TEXCOORD_0": 31,
+            "TEXCOORD_1": 32,
+            "TEXCOORD_2": 33,
+            "TEXCOORD_3": 31,
+            "TEXCOORD_4": 31,
+            "WEIGHTS_0": 45
+          },
+          "indices": 34,
+          "material": 4,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1
+      ],
+      "name": "RootNode (gltf orientation matrix)",
+      "rotation": [
+        -0.70710678118654746,
+        -0,
+        -0,
+        0.70710678118654757
+      ]
+    },
+    {
+      "children": [
+        2
+      ],
+      "matrix": [
+        -1,
+        0,
+        -2.832769343193999e-16,
+        0,
+        0,
+        1,
+        0,
+        0,
+        2.832769343193999e-16,
+        0,
+        -1,
+        0,
+        0.75207597017288208,
+        4.2963501982740127e-06,
+        -2.8810100555419922,
+        1
+      ],
+      "name": "RootNode (model correction matrix)"
+    },
+    {
+      "children": [
+        3
+      ],
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "name": "DogRose_Med.fbx"
+    },
+    {
+      "children": [
+        4
+      ],
+      "name": "RootNode"
+    },
+    {
+      "children": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "name": ""
+    },
+    {
+      "children": [
+        11
+      ],
+      "name": "_rootJoint"
+    },
+    {
+      "mesh": 0,
+      "name": "",
+      "skin": 0
+    },
+    {
+      "mesh": 1,
+      "name": "",
+      "skin": 0
+    },
+    {
+      "mesh": 2,
+      "name": "",
+      "skin": 0
+    },
+    {
+      "mesh": 3,
+      "name": "",
+      "skin": 0
+    },
+    {
+      "mesh": 4,
+      "name": "",
+      "skin": 0
+    },
+    {
+      "children": [
+        12
+      ],
+      "name": "DogRose_Med_Root_02"
+    },
+    {
+      "children": [
+        13,
+        100,
+        114,
+        133,
+        135,
+        152
+      ],
+      "name": "DogRose_Med_Bone_0_Start_03",
+      "translation": [
+        0,
+        0,
+        -0.16649998724460602
+      ]
+    },
+    {
+      "children": [
+        14,
+        56,
+        78
+      ],
+      "name": "DogRose_Med_Bone_0_End_04",
+      "translation": [
+        0.12034600228071213,
+        -0.054270602762699127,
+        0.61757200956344604
+      ]
+    },
+    {
+      "children": [
+        15,
+        23,
+        41
+      ],
+      "name": "DogRose_Med_Bone_1_End_05",
+      "translation": [
+        0.30034902691841125,
+        -0.038188397884368896,
+        0.61874806880950928
+      ]
+    },
+    {
+      "children": [
+        16,
+        17
+      ],
+      "name": "DogRose_Med_Bone_2_End_06",
+      "translation": [
+        0.14296796917915344,
+        0.076017096638679504,
+        0.61259996891021729
+      ]
+    },
+    {
+      "name": "DogRose_Med_Bone_3_End_07",
+      "translation": [
+        -0.10614198446273804,
+        -0.019405398517847061,
+        0.6760098934173584
+      ]
+    },
+    {
+      "children": [
+        18,
+        19,
+        21
+      ],
+      "name": "DogRose_Med_Bone_71_Start_08",
+      "translation": [
+        -0.043331027030944824,
+        0.030426699668169022,
+        0.35417008399963379
+      ]
+    },
+    {
+      "name": "DogRose_Med_Bone_71_End_09",
+      "translation": [
+        -0.18095695972442627,
+        -0.025313001126050949,
+        0.45438981056213379
+      ]
+    },
+    {
+      "children": [
+        20
+      ],
+      "name": "DogRose_Med_Bone_72_Start_010",
+      "translation": [
+        -0.1893959641456604,
+        -0.02753550186753273,
+        0.47725987434387207
+      ]
+    },
+    {
+      "name": "DogRose_Med_Bone_72_End_011",
+      "translation": [
+        -0.1477770060300827,
+        -0.2299463301897049,
+        0.3248600959777832
+      ]
+    },
+    {
+      "children": [
+        22
+      ],
+      "name": "DogRose_Med_Bone_73_Start_012",
+      "translation": [
+        -0.1897309422492981,
+        -0.023812530562281609,
+        0.47722005844116211
+      ]
+    },
+    {
+      "name": "DogRose_Med_Bone_73_End_013",
+      "translation": [
+        -0.26784482598304749,
+        0.09872744232416153,
+        0.30677986145019531
+      ]
+    },
+    {
+      "children": [
+        24,
+        25,
+        27,
+        29,
+        31,
+        33,
+        35,
+        37,
+        39
+      ],
+      "name": "DogRose_Med_Bone_54_Start_014",
+      "translation": [
+        0.12641707062721252,
+        0.0407710000872612,
+        0.33945000171661377
+      ]
+    },
+    {
+      "name": "DogRose_Med_Bone_54_End_015",
+      "translation": [
+        0.21759486198425293,
+        0.099324002861976624,
+        0.30729985237121582
+      ]
+    },
+    {
+      "children": [
+        26
+      ],
+      "name": "DogRose_Med_Bone_61_Start_016",
+      "translation": [
+        0.23898583650588989,
+        0.12310551106929779,
+        0.32701992988586426
+      ]
+    },
+    {
+      "name": "DogRose_Med_Bone_61_End_017",
+      "translation": [
+        0.0010410547256469727,
+        0.38025149703025818,
+        -0.019739985466003418
+      ]
+    },
+    {
+      "children": [
+        28
+      ],
+      "name": "DogRose_Med_Bone_62_Start_018",
+      "translation": [
+        0.24566382169723511,
+        0.11240939795970917,
+        0.32918000221252441
+      ]
+    },
+    {
+      "name": "DogRose_Med_Bone_62_End_019",
+      "translation": [
+        0.26391404867172241,
+        0.28659659624099731,
+        0.065400004386901855
+      ]
+    },
+    {
+      "children": [
+        30
+      ],
+      "name": "DogRose_Med_Bone_55_Start_020",
+      "translation": [
+        0.086197912693023682,
+        0.024383099749684334,
+        0.13778996467590332
+      ]
+    },
+    {
+      "name": "DogRose_Med_Bone_55_End_021",
+      "translation": [
+        0.37095993757247925,
+        0.26076790690422058,
+        -0.34933006763458252
+      ]
+    },
+    {
+      "children": [
+        32
+      ],
+      "name": "DogRose_Med_Bone_56_Start_022",
+      "translation": [
+        0.082183897495269775,
+        0.02154499851167202,
+        0.13923001289367676
+      ]
+    },
+    {
+      "name": "DogRose_Med_Bone_56_End_023",
+      "translation": [
+        -0.22262296080589294,
+        0.39930999279022217,
+        0.13716983795166016
+      ]
+    },
+    {
+      "children": [
+        34
+      ],
+      "name": "DogRose_Med_Bone_57_Start_024",
+      "translation": [
+        0.082597911357879639,
+        0.017014201730489731,
+        0.14352989196777344
+      ]
+    },
+    {
+      "name": "DogRose_Med_Bone_57_End_025",
+      "translation": [
+        0.063066959381103516,
+        -0.43759521842002869,
+        0.17817997932434082
+      ]
+    },
+    {
+      "children": [
+        36
+      ],
+      "name": "DogRose_Med_Bone_58_Start_026",
+      "translation": [
+        0.088459908962249756,
+        0.020976698026061058,
+        0.13926005363464355
+      ]
+    },
+    {
+      "name": "DogRose_Med_Bone_58_End_027",
+      "translation": [
+        0.50724798440933228,
+        -0.042341604828834534,
+        -0.20962011814117432
+      ]
+    },
+    {
+      "children": [
+        38
+      ],
+      "name": "DogRose_Med_Bone_59_Start_028",
+      "translation": [
+        0.16622185707092285,
+        0.058250311762094498,
+        0.25075006484985352
+      ]
+    },
+    {
+      "name": "DogRose_Med_Bone_59_End_029",
+      "translation": [
+        0.43031609058380127,
+        -0.33127737045288086,
+        -0.024320125579833984
+      ]
+    },
+    {
+      "children": [
+        40
+      ],
+      "name": "DogRose_Med_Bone_60_Start_030",
+      "translation": [
+        0.16598188877105713,
+        0.069441303610801697,
+        0.24921000003814697
+      ]
+    },
+    {
+      "name": "DogRose_Med_Bone_60_End_031",
+      "translation": [
+        0.21197402477264404,
+        0.36251470446586609,
+        -0.14774000644683838
+      ]
+    },
+    {
+      "children": [
+        42,
+        44,
+        46,
+        48,
+        50,
+        52,
+        54
+      ],
+      "name": "DogRose_Med_Bone_63_Start_032",
+      "translation": [
+        0.10307493805885315,
+        0.034897696226835251,
+        0.34997999668121338
+      ]
+    },
+    {
+      "children": [
+        43
+      ],
+      "name": "DogRose_Med_Bone_63_End_033",
+      "translation": [
+        -0.044078916311264038,
+        0.0056529045104980469,
+        0.34944987297058105
+      ]
+    },
+    {
+      "name": "DogRose_Med_Bone_64_End_034",
+      "translation": [
+        -0.0040600001811981201,
+        -0.036846902221441269,
+        0.14049005508422852
+      ]
+    },
+    {
+      "children": [
+        45
+      ],
+      "name": "DogRose_Med_Bone_65_Start_035",
+      "translation": [
+        -0.012585997581481934,
+        0.010446999222040176,
+        0.16464996337890625
+      ]
+    },
+    {
+      "name": "DogRose_Med_Bone_65_End_036",
+      "translation": [
+        0.37270808219909668,
+        -0.20584368705749512,
+        0.19247984886169434
+      ]
+    },
+    {
+      "children": [
+        47
+      ],
+      "name": "DogRose_Med_Bone_66_Start_037",
+      "translation": [
+        -0.012670993804931641,
+        0.015917506068944931,
+        0.16331005096435547
+      ]
+    },
+    {
+      "name": "DogRose_Med_Bone_66_End_038",
+      "translation": [
+        0.37979704141616821,
+        0.25537079572677612,
+        0.12295985221862793
+      ]
+    },
+    {
+      "children": [
+        49
+      ],
+      "name": "DogRose_Med_Bone_67_Start_039",
+      "translation": [
+        -0.019550979137420654,
+        0.018642805516719818,
+        0.16200995445251465
+      ]
+    },
+    {
+      "name": "DogRose_Med_Bone_67_End_040",
+      "translation": [
+        -0.2051909863948822,
+        0.49123352766036987,
+        0.022700071334838867
+      ]
+    },
+    {
+      "children": [
+        51
+      ],
+      "name": "DogRose_Med_Bone_68_Start_041",
+      "translation": [
+        -0.04238399863243103,
+        0.0075164996087551117,
+        0.30164992809295654
+      ]
+    },
+    {
+      "name": "DogRose_Med_Bone_68_End_042",
+      "translation": [
+        -0.44145947694778442,
+        -0.30613720417022705,
+        0.01604008674621582
+      ]
+    },
+    {
+      "children": [
+        53
+      ],
+      "name": "DogRose_Med_Bone_69_Start_043",
+      "translation": [
+        -0.031795978546142578,
+        0.011864602565765381,
+        0.30078995227813721
+      ]
+    },
+    {
+      "name": "DogRose_Med_Bone_69_End_044",
+      "translation": [
+        0.41354608535766602,
+        0.046447142958641052,
+        0.041289925575256348
+      ]
+    },
+    {
+      "children": [
+        55
+      ],
+      "name": "DogRose_Med_Bone_70_Start_045",
+      "translation": [
+        -0.040499955415725708,
+        0.015610802918672562,
+        0.30102992057800293
+      ]
+    },
+    {
+      "name": "DogRose_Med_Bone_70_End_046",
+      "translation": [
+        -0.32644602656364441,
+        0.37263751029968262,
+        0.021360039710998535
+      ]
+    },
+    {
+      "children": [
+        57,
+        58,
+        60,
+        64,
+        66,
+        68,
+        70,
+        72,
+        74,
+        76
+      ],
+      "name": "DogRose_Med_Bone_32_Start_047",
+      "translation": [
+        0.15824797749519348,
+        -0.042900599539279938,
+        0.3182319700717926
+      ]
+    },
+    {
+      "name": "DogRose_Med_Bone_32_End_048",
+      "translation": [
+        0.27415803074836731,
+        0.026873387396335602,
+        0.35577601194381714
+      ]
+    },
+    {
+      "children": [
+        59
+      ],
+      "name": "DogRose_Med_Bone_40_Start_049",
+      "translation": [
+        0.2926349937915802,
+        0.0407554991543293,
+        0.3773760199546814
+      ]
+    },
+    {
+      "name": "DogRose_Med_Bone_40_End_050",
+      "translation": [
+        0.054677963256835938,
+        0.35221573710441589,
+        0.077180027961730957
+      ]
+    },
+    {
+      "children": [
+        61,
+        62
+      ],
+      "name": "DogRose_Med_Bone_41_Start_051",
+      "translation": [
+        0.29562398791313171,
+        0.028162099421024323,
+        0.38104599714279175
+      ]
+    },
+    {
+      "name": "DogRose_Med_Bone_41_End_052",
+      "translation": [
+        0.082922101020812988,
+        -0.0076903104782104492,
+        0.083440065383911133
+      ]
+    },
+    {
+      "children": [
+        63
+      ],
+      "name": "DogRose_Med_Bone_42_Start_053",
+      "translation": [
+        0.076964080333709717,
+        -0.003890305757522583,
+        0.080389976501464844
+      ]
+    },
+    {
+      "name": "DogRose_Med_Bone_42_End_054",
+      "translation": [
+        0.11266899108886719,
+        0.41931644082069397,
+        -0.051929950714111328
+      ]
+    },
+    {
+      "children": [
+        65
+      ],
+      "name": "DogRose_Med_Bone_33_Start_055",
+      "translation": [
+        0.12323302030563354,
+        0.00017079710960388184,
+        0.1414610743522644
+      ]
+    },
+    {
+      "name": "DogRose_Med_Bone_33_End_056",
+      "translation": [
+        0.24560007452964783,
+        -0.42112565040588379,
+        0.032905995845794678
+      ]
+    },
+    {
+      "children": [
+        67
+      ],
+      "name": "DogRose_Med_Bone_34_Start_057",
+      "translation": [
+        0.11719000339508057,
+        0.013010695576667786,
+        0.14321208000183105
+      ]
+    },
+    {
+      "name": "DogRose_Med_Bone_34_End_058",
+      "translation": [
+        -0.15956398844718933,
+        0.44568848609924316,
+        0.13027399778366089
+      ]
+    },
+    {
+      "children": [
+        69
+      ],
+      "name": "DogRose_Med_Bone_35_Start_059",
+      "translation": [
+        0.19065502285957336,
+        0.017171099781990051,
+        0.22878104448318481
+      ]
+    },
+    {
+      "name": "DogRose_Med_Bone_35_End_060",
+      "translation": [
+        0.43721604347229004,
+        0.0085687935352325439,
+        -0.32869601249694824
+      ]
+    },
+    {
+      "children": [
+        71
+      ],
+      "name": "DogRose_Med_Bone_36_Start_061",
+      "translation": [
+        0.18428903818130493,
+        0.023408904671669006,
+        0.23459607362747192
+      ]
+    },
+    {
+      "name": "DogRose_Med_Bone_36_End_062",
+      "translation": [
+        0.03766903281211853,
+        0.426462322473526,
+        0.021889925003051758
+      ]
+    },
+    {
+      "children": [
+        73
+      ],
+      "name": "DogRose_Med_Bone_37_Start_063",
+      "translation": [
+        0.1821170449256897,
+        0.012901194393634796,
+        0.23590606451034546
+      ]
+    },
+    {
+      "name": "DogRose_Med_Bone_37_End_064",
+      "translation": [
+        -0.14496403932571411,
+        -0.36786502599716187,
+        0.15590000152587891
+      ]
+    },
+    {
+      "children": [
+        75
+      ],
+      "name": "DogRose_Med_Bone_38_Start_065",
+      "translation": [
+        0.26012101769447327,
+        0.030189208686351776,
+        0.34293597936630249
+      ]
+    },
+    {
+      "name": "DogRose_Med_Bone_38_End_066",
+      "translation": [
+        0.013997018337249756,
+        0.39969801902770996,
+        0.072100043296813965
+      ]
+    },
+    {
+      "children": [
+        77
+      ],
+      "name": "DogRose_Med_Bone_39_Start_067",
+      "translation": [
+        0.26698401570320129,
+        0.022474586963653564,
+        0.33812600374221802
+      ]
+    },
+    {
+      "name": "DogRose_Med_Bone_39_End_068",
+      "translation": [
+        0.38455605506896973,
+        -0.16616038978099823,
+        -0.19440889358520508
+      ]
+    },
+    {
+      "children": [
+        79,
+        80,
+        84,
+        90,
+        92,
+        94,
+        96,
+        98
+      ],
+      "name": "DogRose_Med_Bone_43_Start_069",
+      "translation": [
+        0.15824797749519348,
+        -0.042900599539279938,
+        0.3182319700717926
+      ]
+    },
+    {
+      "name": "DogRose_Med_Bone_43_End_070",
+      "translation": [
+        0.049808025360107422,
+        0.043869197368621826,
+        0.42554599046707153
+      ]
+    },
+    {
+      "children": [
+        81,
+        82
+      ],
+      "name": "DogRose_Med_Bone_49_Start_071",
+      "translation": [
+        0.041165024042129517,
+        0.058766897767782211,
+        0.45619601011276245
+      ]
+    },
+    {
+      "name": "DogRose_Med_Bone_49_End_072",
+      "translation": [
+        -0.32462173700332642,
+        0.031655274331569672,
+        0.23192000389099121
+      ]
+    },
+    {
+      "children": [
+        83
+      ],
+      "name": "DogRose_Med_Bone_50_Start_073",
+      "translation": [
+        0.0013200044631958008,
+        -0.0062683969736099243,
+        -0.022060036659240723
+      ]
+    },
+    {
+      "name": "DogRose_Med_Bone_50_End_074",
+      "translation": [
+        -0.33430290222167969,
+        0.30247169733047485,
+        -0.37945699691772461
+      ]
+    },
+    {
+      "children": [
+        85,
+        86,
+        88
+      ],
+      "name": "DogRose_Med_Bone_51_Start_075",
+      "translation": [
+        0.051414012908935547,
+        0.046453099697828293,
+        0.46086603403091431
+      ]
+    },
+    {
+      "name": "DogRose_Med_Bone_51_End_076",
+      "translation": [
+        0.00046902894973754883,
+        0.089235804975032806,
+        0.40588998794555664
+      ]
+    },
+    {
+      "children": [
+        87
+      ],
+      "name": "DogRose_Med_Bone_52_Start_077",
+      "translation": [
+        0.004270017147064209,
+        -0.0030872970819473267,
+        -0.019279956817626953
+      ]
+    },
+    {
+      "name": "DogRose_Med_Bone_52_End_078",
+      "translation": [
+        0.40076401829719543,
+        -0.094721600413322449,
+        0.0089600086212158203
+      ]
+    },
+    {
+      "children": [
+        89
+      ],
+      "name": "DogRose_Med_Bone_53_Start_079",
+      "translation": [
+        0.039636015892028809,
+        0.0092113986611366272,
+        0.14339995384216309
+      ]
+    },
+    {
+      "name": "DogRose_Med_Bone_53_End_080",
+      "translation": [
+        0.29949501156806946,
+        -0.16795530915260315,
+        -0.093529939651489258
+      ]
+    },
+    {
+      "children": [
+        91
+      ],
+      "name": "DogRose_Med_Bone_44_Start_081",
+      "translation": [
+        0.034169018268585205,
+        0.0022310987114906311,
+        0.18933504819869995
+      ]
+    },
+    {
+      "name": "DogRose_Med_Bone_44_End_082",
+      "translation": [
+        0.16946500539779663,
+        -0.47303089499473572,
+        -0.038047969341278076
+      ]
+    },
+    {
+      "children": [
+        93
+      ],
+      "name": "DogRose_Med_Bone_45_Start_083",
+      "translation": [
+        0.031468003988265991,
+        0.016522787511348724,
+        0.18871110677719116
+      ]
+    },
+    {
+      "name": "DogRose_Med_Bone_45_End_084",
+      "translation": [
+        -0.013227939605712891,
+        0.54930239915847778,
+        -0.091873049736022949
+      ]
+    },
+    {
+      "children": [
+        95
+      ],
+      "name": "DogRose_Med_Bone_46_Start_085",
+      "translation": [
+        0.050161033868789673,
+        0.015865996479988098,
+        0.3084760308265686
+      ]
+    },
+    {
+      "name": "DogRose_Med_Bone_46_End_086",
+      "translation": [
+        0.39029192924499512,
+        -0.15464179217815399,
+        0.04506993293762207
+      ]
+    },
+    {
+      "children": [
+        97
+      ],
+      "name": "DogRose_Med_Bone_47_Start_087",
+      "translation": [
+        0.043678045272827148,
+        0.025133095681667328,
+        0.30677598714828491
+      ]
+    },
+    {
+      "name": "DogRose_Med_Bone_47_End_088",
+      "translation": [
+        -0.032141000032424927,
+        0.42543011903762817,
+        -0.043720006942749023
+      ]
+    },
+    {
+      "children": [
+        99
+      ],
+      "name": "DogRose_Med_Bone_48_Start_089",
+      "translation": [
+        0.044696033000946045,
+        0.012617893517017365,
+        0.30811601877212524
+      ]
+    },
+    {
+      "name": "DogRose_Med_Bone_48_End_090",
+      "translation": [
+        0.032575011253356934,
+        -0.47357279062271118,
+        0.080000042915344238
+      ]
+    },
+    {
+      "children": [
+        101,
+        102,
+        104,
+        106,
+        108,
+        110,
+        112
+      ],
+      "name": "DogRose_Med_Bone_4_Start_091",
+      "translation": [
+        0.04672960564494133,
+        -0.025632902979850769,
+        0.36681899428367615
+      ]
+    },
+    {
+      "name": "DogRose_Med_Bone_4_End_092",
+      "translation": [
+        0.25727742910385132,
+        -0.06811889261007309,
+        0.37026399374008179
+      ]
+    },
+    {
+      "children": [
+        103
+      ],
+      "name": "DogRose_Med_Bone_5_Start_093",
+      "translation": [
+        0.061292391270399094,
+        -0.05861750990152359,
+        0.11271800100803375
+      ]
+    },
+    {
+      "name": "DogRose_Med_Bone_5_End_094",
+      "translation": [
+        0.087946005165576935,
+        -0.4309745728969574,
+        -0.16049401462078094
+      ]
+    },
+    {
+      "children": [
+        105
+      ],
+      "name": "DogRose_Med_Bone_6_Start_095",
+      "translation": [
+        0.061158392578363419,
+        -0.046337306499481201,
+        0.1187169998884201
+      ]
+    },
+    {
+      "name": "DogRose_Med_Bone_6_End_096",
+      "translation": [
+        0.10371500253677368,
+        0.40869820117950439,
+        0.23848104476928711
+      ]
+    },
+    {
+      "children": [
+        107
+      ],
+      "name": "DogRose_Med_Bone_7_Start_097",
+      "translation": [
+        0.11908638477325439,
+        -0.082768097519874573,
+        0.19386698305606842
+      ]
+    },
+    {
+      "name": "DogRose_Med_Bone_7_End_098",
+      "translation": [
+        0.3605189323425293,
+        -0.30835700035095215,
+        -0.25803700089454651
+      ]
+    },
+    {
+      "children": [
+        109
+      ],
+      "name": "DogRose_Med_Bone_8_Start_099",
+      "translation": [
+        0.11286439001560211,
+        -0.083601109683513641,
+        0.19968600571155548
+      ]
+    },
+    {
+      "name": "DogRose_Med_Bone_8_End_0100",
+      "translation": [
+        -0.073429696261882782,
+        -0.43633106350898743,
+        0.085205018520355225
+      ]
+    },
+    {
+      "children": [
+        111
+      ],
+      "name": "DogRose_Med_Bone_9_Start_0101",
+      "translation": [
+        0.18770238757133484,
+        -0.083568103611469269,
+        0.28327697515487671
+      ]
+    },
+    {
+      "name": "DogRose_Med_Bone_9_End_0102",
+      "translation": [
+        0.33039408922195435,
+        0.22214500606060028,
+        -0.35373899340629578
+      ]
+    },
+    {
+      "children": [
+        113
+      ],
+      "name": "DogRose_Med_Bone_10_Start_0103",
+      "translation": [
+        0.18554440140724182,
+        -0.091388091444969177,
+        0.29028701782226562
+      ]
+    },
+    {
+      "name": "DogRose_Med_Bone_10_End_0104",
+      "translation": [
+        0.20671899616718292,
+        -0.32394298911094666,
+        0.057130038738250732
+      ]
+    },
+    {
+      "children": [
+        115,
+        121,
+        123,
+        125,
+        127,
+        129,
+        131
+      ],
+      "name": "DogRose_Med_Bone_11_Start_0105",
+      "translation": [
+        0.029322801157832146,
+        0.0039306096732616425,
+        0.36052897572517395
+      ]
+    },
+    {
+      "children": [
+        116,
+        117,
+        119
+      ],
+      "name": "DogRose_Med_Bone_11_End_0106",
+      "translation": [
+        0.008893301710486412,
+        0.21213839948177338,
+        0.39131999015808105
+      ]
+    },
+    {
+      "name": "DogRose_Med_Bone_12_End_0107",
+      "translation": [
+        -0.028999913483858109,
+        0.0982779860496521,
+        0.13764494657516479
+      ]
+    },
+    {
+      "children": [
+        118
+      ],
+      "name": "DogRose_Med_Bone_19_Start_0108",
+      "translation": [
+        -0.015002800151705742,
+        0.057198971509933472,
+        0.078304052352905273
+      ]
+    },
+    {
+      "name": "DogRose_Med_Bone_19_End_0109",
+      "translation": [
+        -0.29642632603645325,
+        0.25898796319961548,
+        -0.21443000435829163
+      ]
+    },
+    {
+      "children": [
+        120
+      ],
+      "name": "DogRose_Med_Bone_20_Start_0110",
+      "translation": [
+        -0.0055771023035049438,
+        0.056758016347885132,
+        0.079582035541534424
+      ]
+    },
+    {
+      "name": "DogRose_Med_Bone_20_End_0111",
+      "translation": [
+        0.29824602603912354,
+        0.27832198143005371,
+        -0.11063897609710693
+      ]
+    },
+    {
+      "children": [
+        122
+      ],
+      "name": "DogRose_Med_Bone_13_Start_0112",
+      "translation": [
+        0.012869404628872871,
+        0.063186690211296082,
+        0.15396402776241302
+      ]
+    },
+    {
+      "name": "DogRose_Med_Bone_13_End_00",
+      "translation": [
+        0.060602791607379913,
+        -0.4134393036365509,
+        0.24694395065307617
+      ]
+    },
+    {
+      "children": [
+        124
+      ],
+      "name": "DogRose_Med_Bone_14_Start_01",
+      "translation": [
+        0.013822002336382866,
+        0.077027097344398499,
+        0.1491210013628006
+      ]
+    },
+    {
+      "name": "DogRose_Med_Bone_14_End_0113",
+      "translation": [
+        0.10631720721721649,
+        0.53315132856369019,
+        -0.12451298534870148
+      ]
+    },
+    {
+      "children": [
+        126
+      ],
+      "name": "DogRose_Med_Bone_15_Start_0114",
+      "translation": [
+        0.0067420024424791336,
+        0.12225839495658875,
+        0.24832700192928314
+      ]
+    },
+    {
+      "name": "DogRose_Med_Bone_15_End_0115",
+      "translation": [
+        -0.4420107901096344,
+        0.048873007297515869,
+        0.035330027341842651
+      ]
+    },
+    {
+      "children": [
+        128
+      ],
+      "name": "DogRose_Med_Bone_16_Start_0116",
+      "translation": [
+        0.018502103164792061,
+        0.1221453994512558,
+        0.24885900318622589
+      ]
+    },
+    {
+      "name": "DogRose_Med_Bone_16_End_0117",
+      "translation": [
+        0.49383306503295898,
+        0.024505987763404846,
+        0.14766708016395569
+      ]
+    },
+    {
+      "children": [
+        130
+      ],
+      "name": "DogRose_Med_Bone_17_Start_0118",
+      "translation": [
+        0.010303700342774391,
+        0.18352639675140381,
+        0.35870200395584106
+      ]
+    },
+    {
+      "name": "DogRose_Med_Bone_17_End_0119",
+      "translation": [
+        -0.07330070436000824,
+        -0.1581692099571228,
+        0.43680107593536377
+      ]
+    },
+    {
+      "children": [
+        132
+      ],
+      "name": "DogRose_Med_Bone_18_Start_0120",
+      "translation": [
+        0.011929901316761971,
+        0.1906263679265976,
+        0.34914010763168335
+      ]
+    },
+    {
+      "name": "DogRose_Med_Bone_18_End_0122",
+      "translation": [
+        0.069375298917293549,
+        0.33311000466346741,
+        -0.30590605735778809
+      ]
+    },
+    {
+      "children": [
+        134
+      ],
+      "name": "DogRose_Med_Bone_21_Start_0123",
+      "translation": [
+        -0.012597701512277126,
+        0.37099501490592957,
+        0.97389799356460571
+      ]
+    },
+    {
+      "name": "DogRose_Med_Bone_21_End_0124",
+      "translation": [
+        -0.27173930406570435,
+        -0.21638701856136322,
+        0.14534401893615723
+      ]
+    },
+    {
+      "children": [
+        136,
+        144,
+        146,
+        148,
+        150
+      ],
+      "name": "DogRose_Med_Bone_22_Start_0125",
+      "translation": [
+        0.020340500399470329,
+        -0.025737302377820015,
+        0.36546999216079712
+      ]
+    },
+    {
+      "children": [
+        137,
+        138,
+        140,
+        142
+      ],
+      "name": "DogRose_Med_Bone_22_End_0126",
+      "translation": [
+        -0.043972700834274292,
+        -0.1750447005033493,
+        0.30216997861862183
+      ]
+    },
+    {
+      "name": "DogRose_Med_Bone_23_End_0127",
+      "translation": [
+        0.052367404103279114,
+        -0.15567004680633545,
+        0.14242708683013916
+      ]
+    },
+    {
+      "children": [
+        139
+      ],
+      "name": "DogRose_Med_Bone_28_Start_0128",
+      "translation": [
+        0.0039300993084907532,
+        -0.011923015117645264,
+        0.0062329769134521484
+      ]
+    },
+    {
+      "name": "DogRose_Med_Bone_28_End_0129",
+      "translation": [
+        0.14958411455154419,
+        -0.31362295150756836,
+        -0.3052629828453064
+      ]
+    },
+    {
+      "children": [
+        141
+      ],
+      "name": "DogRose_Med_Bone_29_Start_0130",
+      "translation": [
+        0.028108052909374237,
+        -0.10537302494049072,
+        0.10175502300262451
+      ]
+    },
+    {
+      "name": "DogRose_Med_Bone_29_End_0131",
+      "translation": [
+        -0.11040084809064865,
+        -0.37219798564910889,
+        -0.24105900526046753
+      ]
+    },
+    {
+      "children": [
+        143
+      ],
+      "name": "DogRose_Med_Bone_30_Start_0132",
+      "translation": [
+        0.033171873539686203,
+        -0.099965989589691162,
+        0.10754901170730591
+      ]
+    },
+    {
+      "name": "DogRose_Med_Bone_30_End_0133",
+      "translation": [
+        0.38021737337112427,
+        -0.14732998609542847,
+        0.15494197607040405
+      ]
+    },
+    {
+      "children": [
+        145
+      ],
+      "name": "DogRose_Med_Bone_24_Start_0134",
+      "translation": [
+        -0.023473139852285385,
+        -0.055704407393932343,
+        0.13709400594234467
+      ]
+    },
+    {
+      "name": "DogRose_Med_Bone_24_End_0135",
+      "translation": [
+        0.016743239015340805,
+        0.41186970472335815,
+        0.39500299096107483
+      ]
+    },
+    {
+      "children": [
+        147
+      ],
+      "name": "DogRose_Med_Bone_25_Start_0136",
+      "translation": [
+        -0.046277604997158051,
+        -0.11710970103740692,
+        0.21611197292804718
+      ]
+    },
+    {
+      "name": "DogRose_Med_Bone_25_End_0137",
+      "translation": [
+        -0.11752892285585403,
+        -0.3831099271774292,
+        -0.3080439567565918
+      ]
+    },
+    {
+      "children": [
+        149
+      ],
+      "name": "DogRose_Med_Bone_26_Start_0138",
+      "translation": [
+        -0.038949601352214813,
+        -0.11208769679069519,
+        0.22370503842830658
+      ]
+    },
+    {
+      "name": "DogRose_Med_Bone_26_End_0139",
+      "translation": [
+        0.47053012251853943,
+        -0.10083900392055511,
+        0.1466619074344635
+      ]
+    },
+    {
+      "children": [
+        151
+      ],
+      "name": "DogRose_Med_Bone_27_Start_0140",
+      "translation": [
+        -0.049530602991580963,
+        -0.11057369410991669,
+        0.22290201485157013
+      ]
+    },
+    {
+      "name": "DogRose_Med_Bone_27_End_0141",
+      "translation": [
+        -0.42276191711425781,
+        0.035916991531848907,
+        0.10442394018173218
+      ]
+    },
+    {
+      "children": [
+        153
+      ],
+      "name": "DogRose_Med_Bone_31_Start_0121",
+      "translation": [
+        0.073130011558532715,
+        -0.42324700951576233,
+        0.86865895986557007
+      ]
+    },
+    {
+      "name": "DogRose_Med_Bone_31_End_0142",
+      "translation": [
+        0.30970105528831482,
+        -0.051635026931762695,
+        -0.029362022876739502
+      ]
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987,
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "OSG_Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "skins": [
+    {
+      "inverseBindMatrices": 35,
+      "joints": [
+        5,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99,
+        100,
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119,
+        120,
+        121,
+        122,
+        123,
+        124,
+        125,
+        126,
+        127,
+        128,
+        129,
+        130,
+        131,
+        132,
+        133,
+        134,
+        135,
+        136,
+        137,
+        138,
+        139,
+        140,
+        141,
+        142,
+        143,
+        144,
+        145,
+        146,
+        147,
+        148,
+        149,
+        150,
+        151,
+        152,
+        153
+      ],
+      "skeleton": 5
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0
+    },
+    {
+      "sampler": 0,
+      "source": 1
+    },
+    {
+      "sampler": 0,
+      "source": 2
+    },
+    {
+      "sampler": 0,
+      "source": 3
+    },
+    {
+      "sampler": 0,
+      "source": 4
+    },
+    {
+      "sampler": 0,
+      "source": 5
+    },
+    {
+      "sampler": 0,
+      "source": 6
+    },
+    {
+      "sampler": 0,
+      "source": 7
+    },
+    {
+      "sampler": 0,
+      "source": 8
+    },
+    {
+      "sampler": 0,
+      "source": 9
+    },
+    {
+      "sampler": 0,
+      "source": 10
+    },
+    {
+      "sampler": 0,
+      "source": 11
+    },
+    {
+      "sampler": 0,
+      "source": 12
+    },
+    {
+      "sampler": 0,
+      "source": 13
+    }
+  ]
+}
+
