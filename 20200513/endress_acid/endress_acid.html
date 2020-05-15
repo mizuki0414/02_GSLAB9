@@ -1,10 +1,15 @@
 <html lang="en">
 	<head>
-		<title>Convex object breaking example</title>
+		<title>endress_acid</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 		<link type="text/css" rel="stylesheet" href="main.css">
 		<style>
+			@font-face {
+				font-family: 'MyFont';
+				src: url(./DoubleFeature20.ttf);
+				color: white;
+			}
 			body {
 				color: #333;
 			}
@@ -12,6 +17,7 @@
 	</head>
 	<body>
 	<div id="container"></div>
+	<h1>Endress Acid...</h1>
 	<script src="./js/ammo.js"></script>
 	<script src="./js/GLTFLoader.js"></script>
 	<script type="module">
@@ -32,7 +38,7 @@
 		var clock = new THREE.Clock();
 		var mouseCoords = new THREE.Vector2();
 		var raycaster = new THREE.Raycaster();
-		var ballMaterial = new THREE.MeshPhongMaterial( { color: 0x202020 } );
+		var ballMaterial = new THREE.MeshPhongMaterial( { color: 0xff1493 } );
 
 		// Physics variables
 		var gravityConstant = 7.8;
@@ -73,7 +79,6 @@
 
 			init();
 			animate();
-			createZombies();
 			setInterval(createZombies, 8000);
 		} );
 
@@ -246,24 +251,26 @@
 			var loader = new GLTFLoader();
 			var model = './textures/zombie/scene.gltf';
 			//loading_glTF
-			let x = 20 - Math.random() * 35 + 1;
-			let z = 20 - Math.random() * 35 + 1;
+			let x1 = 20 - Math.random() * 35 + 1;
+			let z1 = 20 - Math.random() * 35 + 1;
 			loader.load(model, (data) => {
 			var gltf = data;
 			var object = gltf.scene;
 			object.scale.set(1.0, 1.0, 1.0);
-			object.position.set(x, 0, z);
-
-			// loading_animation
-			// var animations = gltf.animations;
-			// var mixer;
-			// mixer = new THREE.AnimationMixer(object);
-
-			// var anime = mixer.clipAction(animations);
-			// anime.play();
-
-			//シーンに追加
+			object.position.set(x1, 0, z1);
 			scene.add(object);
+
+			//Addobj
+			let x2 = Math.random() * 3 + 1;
+			let y2 = Math.random() * 3 + 1;
+			let z2 = Math.random() * 3 + 1;
+			let x3 = 20 - Math.random() * 35 + 1;
+			let z3 = 20 - Math.random() * 35 + 1;
+			var zombieMass = 100;
+			var zombieHalfExtents = new THREE.Vector3( x2, y2, z2 );
+			pos.set(x3, 0, z3);
+			quat.set( 0, 0, 0, 1 );
+			createObject( zombieMass, zombieHalfExtents, pos, quat, createMaterial( 0x00ff00 ) );
 
 			});
 		}
