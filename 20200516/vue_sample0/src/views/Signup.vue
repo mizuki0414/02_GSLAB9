@@ -3,7 +3,9 @@
     <h2>Sign up</h2>
     <input type="text" placeholder="Username" v-model="username">
     <input type="password" placeholder="Password" v-model="password">
-    <button @click="signUp">Register</button>
+    <br>
+    <v-btn depressed color="warning" @click="signUp">Register</v-btn>
+    <br>
     <p>Do you have an account?
       <router-link to="/signin">sign in now!!</router-link>
     </p>
@@ -54,8 +56,8 @@ a {
   color: #42b983;
 }
 .signup {
-  margin-top: 20px;
-
+  margin-top: 250px;
+  margin-bottom: 250px;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;

@@ -1,9 +1,12 @@
 <template>
   <div class="signin">
+    <br>
     <h2>Sign in</h2>
     <input type="text" placeholder="Username" v-model="username">
     <input type="password" placeholder="Password" v-model="password">
-    <button @click="signIn">Signin</button>
+    <br>
+    <v-btn depressed color="primary" @click="signIn">Signin</v-btn>
+    <br>
     <p>You don't have an account?
       <router-link to="/signup">create account now!!</router-link>
     </p>
@@ -66,4 +69,10 @@ input {
   margin: 10px 0;
   padding: 10px;
 }
+
+.signin {
+  margin-top: 250px;
+  margin-bottom: 250px;
+}
+
 </style>
