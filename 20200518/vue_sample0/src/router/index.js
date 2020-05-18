@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import Signup from '../views/Signup.vue'
 import Signin from '../views/Signin.vue'
+import Userhome from '../views/Userhome.vue'
 
 
 Vue.config.productionTip = false
@@ -23,6 +24,11 @@ Vue.use(VueRouter)
     path: '/signin',
     name: 'Signin',
     component: Signin
+  },
+  {
+    path: '/userhome',
+    name: 'Userhome',
+    component: Userhome
   }
 ]
 

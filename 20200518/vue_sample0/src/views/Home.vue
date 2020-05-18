@@ -12,7 +12,7 @@
 </template>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style>
+<style scoped>
 
 .text-center {
   margin-top: 60px;
@@ -36,12 +36,6 @@ h4 {
   width: 100%;
   background-image: url("../assets/mr-tt-xb0wLfZH9Zo-unsplash.jpg");
   background-size: cover;
-}
-
-.v-parallax__image {
-  transform: translate(-50%, 0px) !important;
-  background-image: url("../assets/mr-tt-xb0wLfZH9Zo-unsplash.jpg");
-  background-size: contain;
 }
 
 .v-btn:not(.v-btn--round).v-size--default {
