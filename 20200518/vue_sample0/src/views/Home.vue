@@ -2,8 +2,8 @@
   <div class="home">
     <v-row align="center" justify="center">
       <v-col class="text-center" cols="12">
-        <h1>Vuetify.js</h1>
-        <h4>Build your application today!</h4>
+        <h1>MaterialPicks.</h1>
+        <h4>watch many materials today!</h4>
       </v-col>
       <v-btn outlined color="primary" router-link to="/signin">Signin</v-btn>
       <v-btn outlined color="warning" router-link to="/signup">Signup</v-btn>
@@ -21,7 +21,7 @@
 h1 {
   color: white;
   font-weight: bold;
-  font-size: 250px;
+  font-size: 150px;
   margin-block-start: 0.1em;
   margin-block-end: 0.1em;
 }

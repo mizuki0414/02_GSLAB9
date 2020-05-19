@@ -13,7 +13,6 @@
 </template>
 
 <script>
-console.log('SignUp');
 import firebase from 'firebase'
 
 export default {

@@ -4,6 +4,7 @@ import Home from '../views/Home.vue'
 import Signup from '../views/Signup.vue'
 import Signin from '../views/Signin.vue'
 import Userhome from '../views/Userhome.vue'
+import Userphotos from '../views/Userphotos.vue'
 
 
 Vue.config.productionTip = false
@@ -29,6 +30,11 @@ Vue.use(VueRouter)
     path: '/userhome',
     name: 'Userhome',
     component: Userhome
+  },
+  {
+    path: '/userphotos',
+    name: 'Userphotos',
+    component: Userphotos
   }
 ]
 

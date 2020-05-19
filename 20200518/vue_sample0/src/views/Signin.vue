@@ -14,7 +14,6 @@
 </template>
 
 <script>
-console.log('SignIn');
 import firebase from 'firebase'
 
 export default {

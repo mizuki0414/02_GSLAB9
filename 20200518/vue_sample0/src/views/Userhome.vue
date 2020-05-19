@@ -1,9 +1,41 @@
 <template>
  <v-app>
-    <v-card
-      height="1000"
-      class="overflow-hidden"
-    >
+    <v-card height="3000">
+    <div class="userhome-dashboard">
+            <h1>Material Picks</h1>
+              <v-file-input
+                    label="If you have a good photo...please upload!"
+                    filled
+                    prepend-icon="mdi-camera"
+                ></v-file-input>
+            <v-card>
+            <v-tabs background-color="white" color="deep-purple accent-4" right>
+            <v-tab>Show All</v-tab>
+            <v-tab>Nature</v-tab>
+            <v-tab>Season</v-tab>
+            <v-tab>Public</v-tab>
+            <v-tab>Sky</v-tab>
+            <v-tab>Animals</v-tab>
+
+            <v-tab-item v-for="n in 6" :key="n">
+                <v-container fluid>
+                    <v-row>
+                        <v-col v-for="i in 21" :key="i" cols="4" md="4">
+                            <v-img :src="`https://picsum.photos/500/300?image=${i * n * 5 + 20}`" :lazy-src="`https://picsum.photos/10/6?image=${i * n * 5 + 20}`" aspect-ratio="1">
+                            <v-row class="img-card" align="end" justify="space-around">
+                                    <v-icon color="blue lighten-5">mdi-heart-outline</v-icon>
+                                    <v-icon color="blue lighten-5">mdi-access-point</v-icon>
+                                    <v-icon color="blue lighten-5">mdi-arrow-collapse-down</v-icon>
+                            </v-row>
+                            </v-img>
+                        </v-col>
+
+                    </v-row>
+                </v-container>
+            </v-tab-item>
+            </v-tabs>
+        </v-card>
+    </div>
       <v-navigation-drawer
         v-model="drawer"
         :color="color"
@@ -49,7 +81,6 @@
         </v-list>
       </v-navigation-drawer>
     </v-card>
-    <v-card>test</v-card>
 </v-app>
 </template>
 <script>
@@ -64,8 +95,9 @@
         uid: firebase.auth().currentUser.uid,
         items: [
           { title: 'Dashboard', icon: 'mdi-view-dashboard' },
-          { title: 'Photos', icon: 'mdi-image' },
-          { title: 'About', icon: 'mdi-help-box' },
+          { title: 'Uploaded Photos', icon: 'mdi-image' },
+          { title: 'Help', icon: 'mdi-help-box' },
+          { title: 'Signout', icon: 'mdi-account-arrow-right-outline' }
         ],
         color: 'primary',
         colors: [
@@ -102,9 +134,19 @@
 </script>
 <style>
     h1 {
-        color:black;
+        color:grey ;
         font-weight: bold;
         font-size: 50px;
+    }
+
+    .userhome-dashboard {
+        margin-top: 20px;
+        margin-left: 300px;
+        margin-right: 40px;
+    }
+
+    .img-card {
+        margin-top: 300px;
     }
 
 </style>
