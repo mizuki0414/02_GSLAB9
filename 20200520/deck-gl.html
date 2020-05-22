@@ -1,0 +1,147 @@
+<!doctype html>
+<html class="no-js" lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Traffic-Bus</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mapbox-gl/0.53.1/mapbox-gl.css" />
+        <script src="https://code.jquery.com/jquery-3.4.0.js"
+        integrity="sha256-DYZMCC8HTC+QDr5QNaIcfR7VSPtcISykd+6eSmBW5qo=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mapbox-gl/0.53.1/mapbox-gl.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/deck.gl@7.0.0/dist.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.13.0/d3.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-scale/1.0.7/d3-scale.js"></script>
+        <style type="text/css">
+            html, body {
+                padding: 0;
+                margin: 0;
+                width: 100%;
+                height: 100%;
+            }
+            #panel {
+                position: absolute;
+                background: #ffffff00;
+                top: 0;
+                left: 0;
+                margin: 4px;
+                padding: 4px;
+                line-height: 1;
+                width:260px;
+                height:26px;
+                z-index: 2;
+                text-align: center;
+                vertical-align: middle;
+            }
+            #tooltip {
+                font-family: Helvetica, Arial, sans-serif;
+                font-size: 12px;
+                position: absolute;
+                padding: 4px;
+                margin: 8px;
+                background: rgba(0, 0, 0, 0.8);
+                color: #fff;
+                max-width: 300px;
+                z-index: 9;
+                pointer-events: none;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="app" style="width:100%;height:100%;"></div>
+        <div id="tooltip"></div>
+    </body>
+    <script type="text/javascript">
+        const LAT = 35.644449;
+        const LNG = 139.618597;
+        let min=1e10;
+        let max=-1e10;
+        let data=[];
+        const ICON_MAPPING = {
+            arker: {x: 0, y: 0, width: 32, height: 32, mask: true}
+        };
+        const DEFAULT_COLOR = [29, 145, 192];
+        const COLOR_SCALE = d3.scaleLinear()
+            .domain([0,0.2,0.4,0.6,0.8,1.0])
+            .range([
+                [1, 152, 189],
+                [73, 227, 206],
+                [216, 254, 181],
+                [254, 237, 177],
+                [254, 173, 84],
+                [209, 55, 78]
+            ]);
+
+        const deckgl = new deck.DeckGL({
+            container: 'app',
+            mapboxApiAccessToken: "pk.eyJ1IjoibWl6dWtpMDQxNCIsImEiOiJjazl3dHRzNmswZDhsM21wM2Qwd3ZreDBkIn0.p1sy0sG2r5k1_YRLzD3LSg",
+            mapStyle: "mapbox://styles/mapbox/dark-v9",
+            longitude: LNG,
+            latitude: LAT,
+            zoom: 10,
+            pitch: 40,
+            bearing: -10,
+            onViewStateChange: ({viewState}) => {
+                return viewState;
+            }
+        });
+        const loadData = () => {
+            d3.json("bus.geojson", (error, response)=>{
+                let n=response.features.length;
+                for(let i=0;i<n;i++){
+                    setData(response.features[i]);
+                }
+                renderLayer(data);
+            });
+        };
+        const renderLayer = (data) => {
+            console.log(data.length);
+            const lineLayer = new deck.LineLayer({
+                id: 'bus',
+                data,
+                fp64: false,
+                getSourcePosition: d => d.start,
+                getTargetPosition: d => d.end,
+                getColor: d => COLOR_SCALE(nomarize(d.rate)),
+                getWidth: d => nomarize(d.rate)*10,
+                pickable: true,
+                onHover: updateTooltip
+            });
+            deckgl.setProps({
+                layers: [lineLayer]
+            });
+        };
+        const setData=(feature) =>{
+            let geo=feature.geometry.coordinates[0];
+            let pro=feature.properties;
+            let v=pro.N07_004>1? Math.log10(pro.N07_004*10):1;
+            max=Math.max(max,v);
+            min=Math.min(min,v);
+            for(let i=1;i<geo.length;i++){
+                let dd={};
+                dd["company"]=pro.N07_002;
+                dd["line"]=pro.N07_003;
+                dd["start"]=geo[i-1];
+                dd["end"]=geo[i];
+                dd["rate"]=v;
+                data.push(dd);
+            }
+        };
+        const nomarize =(val) =>{
+            return (val-min)/(max-min);
+        };
+        const updateTooltip=({x, y, object}) => {
+            const tooltip = document.getElementById("tooltip");
+            if (object) {
+                tooltip.style.visibility="visible";
+                tooltip.style.top = y+"px";
+                tooltip.style.left = x+"px";
+                tooltip.innerHTML = "<p>"+object["company"]+"<br />"+object["line"]+"</p>";
+            } else {
+                tooltip.style.visibility="hidden";
+                tooltip.innerHTML = "";
+            }
+        };
+        loadData();
+    </script>
+</html>
