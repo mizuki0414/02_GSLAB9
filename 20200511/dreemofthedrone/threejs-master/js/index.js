@@ -18,7 +18,7 @@ function init() {
   const scene = new THREE.Scene();
 
   // Cameraを作成
-  camera = new THREE.PerspectiveCamera(45, width / height, 1, 10000);
+  camera = new THREE.PerspectiveCamera(45, width / height, 1, 3);
   camera.position.set(0, 400, -1000);
   const controls = new THREE.OrbitControls(camera, renderer.domElement);
 
