@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <script src="bitOpe.js"></script>
+
+    <script>
+        var n = 0x00;
+
+        document.write("n = " + toBin(n) + "<br />");
+
+        n = setBit(n, _bit1 | _bit3 | _bit6);
+        document.write("n = " + toBin(n) + "<br />");
+
+        n = resetBit(n, _bit5 | _bit6);
+        document.write("n = " + toBin(n) + "<br />");
+
+        n = trigBit(n, _bit3 | _bit4 | _bit5);
+        document.write("n = " + toBin(n) + "<br />");
+
+        let key = 0x54; // keyは何でも良い
+        for(src=0; src<256; src++) {
+        let dist = trigBit(src, key);
+        document.write("key= " + toBin(key) + ",  src= " + toBin(src) + ", dist= " + toBin(dist) + "<br />");
+        }
+
+    </script>
+</body>
+</html>
