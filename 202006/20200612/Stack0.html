@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <p>
+    <script>
+        let MaxArry = 10;
+        var Stack = Array(MaxArry);
+        var Queue = Array(MaxArry);
+        var index = 0;
+
+        function push(i) {
+            if (index > MaxArry) return 0;
+            Stack[index] = i;
+            index++;
+            return index;
+        }
+
+        function pop() {
+            if (index <= 0) return null;
+            index--;
+            return Stack[index];
+        } 
+
+        var topIndex = 0;
+        var tailIndex = 0;
+
+        function qin(i) {
+            if (topIndex == (tailIndex + MaxArry - 1) % MaxArry) return 0;
+            Queue[topIndex] = i;
+            topIndex++;
+            topIndex = topIndex % MaxArry;
+            return (i);
+        }
+
+        function qout() {
+            if (tailIndex == topIndex) return null;
+            var d = Queue[tailIndex];
+            tailIndex++;
+            tailIndex = tailIndex % MaxArry;
+            return d;
+        }
+
+
+        push(2);
+        push(5);
+        document.write("pop :" + pop() + "<br />");
+        document.write("pop :" + pop() + "<br />");
+        document.write("pop :" + pop() + "<br />");
+
+        qin(3);
+        qin(6);
+        document.write("que :" + qout() + "<br />");
+        document.write("que :" + qout() + "<br />");
+        document.write("que :" + qout() + "<br />");
+
+        for (var i = 0; i < 11; i++) {            
+            document.write("qin :" + qin(i * 3) + "<br />");
+//            document.write("que :" + qout() + "<br />");
+        }
+
+        for (var i = 0; i < 11; i++) {
+            //document.write("qin :" + qin(i * 3) + "<br />");
+            document.write("que :" + qout() + "<br />");
+        }
+
+        class g_BTree {
+            constructor() {
+                this.val = -1; // データ
+                this.num = 0; // データ数
+                this.left = null;
+                this.right = null;
+            }
+
+            inTree(n) {
+                if (this.num == 0) {
+                    this.val = n;
+                    this.num++;
+                    return;
+                }
+                if (this.val == n) {
+                    this.num++;
+                    return;
+                }
+                if (n < this.val) {
+                    if (this.left == null)
+                        this.left = new g_BTree();
+                    this.left.inTree(n);
+                    return;
+                }
+                if (n > this.val) {
+                    if (this.right == null)
+                        this.tight = new g_BTree();
+                    this.right.inTree(n);
+                    return;
+                }
+            }
+
+            // seaTree()
+            // printTree()
+        
+        }
+
+
+
+        var tree01 = new g_BTree();
+
+        tree01.inTree(3);
+
+
+    </script>
+</body>
+</html>

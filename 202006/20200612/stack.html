@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+    <script>
+        const MaxArray = 10;
+        const PushCount = 10;
+        let stack = Array( MaxArray );
+        let stack_index = 0; //Stackの入力を入れる場所
+        for (i=0; i<PushCount; i++) {
+           stack_push(i) ;
+           document.write("i = " + i + "<br />");
+        }
+        document.write("<br />");
+        for (i=0; i<PushCount; i++) {
+           pop_data = stack_pop();
+           document.write("pop_data = " + pop_data + "<br />");
+        }
+        function stack_push(n) {
+           if (stack_index > n) {
+              return -1; // stack overflow
+           }
+           stack[stack_index] = n;
+           stack_index++;
+           return stack_index;
+        }
+        function stack_pop() {
+           if (stack_index < 0) {
+                 return null; // stack enpty
+           }
+           stack_index--;
+           pop_data = stack[stack_index];
+           return pop_data;
+        }
+        </script>
+</body>
+</html>
