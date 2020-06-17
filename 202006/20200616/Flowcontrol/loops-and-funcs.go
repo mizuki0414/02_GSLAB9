@@ -17,7 +17,7 @@ func Sqrt(x float64) float64 {
 		res = z - ( z*z - x ) / ( 2*z )
 
 		// 推測値と結果値の誤差が 0.001 未満ならループ終了
-		if math.Abs(res - z) < 0.001 { break }  // → math.Abs は絶対値を求めるための関数
+		if math.Abs(res - z) < 0.0000000000000001 { break }  // → math.Abs は絶対値を求めるための関数
 
 		// デバック用出力
 		fmt.Printf("Sqrt x   >>> %f\n", x)
