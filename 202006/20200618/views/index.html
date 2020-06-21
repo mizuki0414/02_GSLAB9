@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Vue.jsをインクルード -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script> 
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="top">
+        <my-component></my-component>
+    </div>
+    <script>
+        //ここからvue側のプログラム開始
+        var flg = false;
+        Vue.component('my-component', {
+        // 変数群
+        data: function() {
+            return {
+                recipeList: [],
+                str: "レシピを表示",
+                str2: "",
+                txtStr: "",
+            }
+        },
+        // メソッド
+        methods: {
+            showRecipe: function() {
+                // 処理を記述
+                if(!flg){
+                    // 1回目(奇数回)に押下された時
+                    // axios.getを用いてAPIを叩く(非同期)
+                    axios.get('/recipe').then(
+                        res => {
+                            this.recipeList = res.data.items || [];
+                            flg = true;
+                            this.str = "レシピを非表示";
+                    }).catch(function (error) {
+                        console.log(error);
+                    });
+                } else {
+                    // 2回目(偶数回)に押下された時
+                    this.recipeList = null;
+                    flg = false;
+                    this.str = "レシピを表示";
+                }
+            },
+            postSample: function() {
+                // 処理を記述
+                let params = new URLSearchParams();
+                    params.append('SampleData', this.txtStr);
+                    axios.post('/sample', params)
+                    .then(
+                        response => {
+                            this.str2 = 'POST成功!!!【送信されたDATA =>' + response.data["SampleData"] + '】';
+                        }).catch(
+                        error => {
+                            this.str2 = 'POST失敗!!'
+                        });
+                    },
+                },
+                // 表示させたいHTML
+                template: '<div><h1>Vue.jsを使ってみる</h1>'
+                + '<h2>◆GETの例</h2>'
+                + '<button v-on:click="this.showRecipe">{{str}}</button>'
+                + '<ul>'
+                + '<li v-for="recipe in recipeList">'
+                + '<a v-bind:href="recipe.url">{{recipe.name}}</a>'
+                + '</li>'
+                + '</ul>'
+                + '<h2>◆POSTの例</h2>'
+                + '<input type="text" v-model="txtStr">'
+                + '<button v-on:click="this.postSample">Post</button>'
+                + '<p>{{str2}}</p></div>'
+            })
+            // インスタンス生成
+            new Vue ({
+                el: '#top',
+            })
+    </script>
+</body>
+</html>
