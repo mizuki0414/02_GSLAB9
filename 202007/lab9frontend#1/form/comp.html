@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <style>
+
+  </style>
+</head>
+
+<body>
+  <div id="app">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light　mb-5">
+      <a href="" class="navbar-brand">プロダクト情報登録フォーム</a>
+    </nav>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h1 class="mb-5">{{ inputData.productName }}</h1>
+          <h2 class="mb-3">仕様技術</h2>
+          <div>
+            <span v-for="(chip, index) in tecChips" :key=`chip-${index}`
+              class="badge badge-pill badge-light">{{ chip }}</span>
+          </div>
+          <h2 class="mb-5">{{ inputData.tecDetail }}</h2>
+          <h2 class="mb-5">{{ inputData.serviceDetail }}</h2>
+        </div>
+        <div class="col">
+          <form>
+            <div class="form-group">
+              <label>プロダクト名</label>
+              <input @keyup="save" v-model="inputData.productName" type="text" class="form-control mb-5">
+              <label for="exampleFormControlInput1">仕様技術（半角カンマ区切りで入力してください）</label>
+              <input @keyup="save" v-model="inputData.tecTopix" type="text" class="form-control mb-5" id="">
+              <label for="exampleFormControlInput1">技術的に工夫した事</label>
+              <textarea @keyup="save" v-model="inputData.tecDetail" class="form-control mb-5" id="" rows="3"></textarea>
+              <label for="exampleFormControlInput1">サービス的に工夫した事</label>
+              <textarea @keyup="save" v-model="inputData.serviceDetail" class="form-control mb-5" id=""
+                rows="3"></textarea>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script>
+    const app = new Vue({
+      el: '#app',
+      created() {
+        // if (this.checkLocalData()) {
+        //   const localData = this.fetchLocalData()
+        //   this.setLocalData(localData)
+        // }
+        this.checkLocalData() && this.setLocalData(this.fetchLocalData())
+      },
+      data: {
+        appTitle: 'Attendanceeeee',
+        localStrageKey: 'localstrageKey',
+        inputData: {
+          productName: '',
+          tecTopix: '',
+          tecDetail: '',
+          serviceDetail: '',
+        }
+      },
+      computed: {
+        tecChips() {
+          return this.inputData.tecTopix.split(',')
+        }
+      },
+      methods: {
+        save() {
+          localStorage.setItem(this.localStrageKey, JSON.stringify(this.inputData))
+        },
+
+        checkLocalData() {
+          return localStorage.getItem(this.localStrageKey).length > 0 ? true : false
+        },
+
+        fetchLocalData() {
+          return JSON.parse(localStorage.getItem(this.localStrageKey))
+        },
+
+        setLocalData(localData) {
+          this.inputData = localData
+        },
+      }
+    })
+  </script>
+</body>
+
+</html>

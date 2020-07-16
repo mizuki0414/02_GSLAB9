@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <style>
+    img {
+      width: 10%;
+      height: auto;
+    }
+
+    button {
+      right: 18px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="app">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light　mb-5">
+      <a href="" class="navbar-brand">{{ appTitle }}</a>
+    </nav>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <p>G's（onsite）</p>
+          <ul class="list-group">
+            <li v-for="member in onsiteMember" :key="member.id" class="list-group-item position-relative">
+              <img :src=`./avatars/avatar-${member.id}.jpg` alt="..." class="rounded-circle">
+              <span class="mr-1">{{ member.name }}</span>
+              <span v-if="!member.remote" class="badge badge-pill badge-primary">Onsite</span>
+              <span v-if="member.remote" class="badge badge-pill badge-secondary">Remote</span>
+              <button @click="attend(member.id)" type="button"
+                class="btn btn-outline-primary btn-sm position-absolute">出席</button>
+            </li>
+          </ul>
+        </div>
+        <div class="col">
+          <p>Zoom（remote）</p>
+          <ul class="list-group">
+            <li v-for="member in remoteMember" :key="member.id" class="list-group-item position-relative">
+              <img :src=`./avatars/avatar-${member.id}.jpg` alt="..." class="rounded-circle">
+              <span class="mr-1">{{ member.name }}</span>
+              <span v-if="!member.remote" class="badge badge-pill badge-primary">Onsite</span>
+              <span v-if="member.remote" class="badge badge-pill badge-secondary">Remote</span>
+              <button @click="attend(member.id)" type="button"
+                class="btn btn-outline-primary btn-sm position-absolute">出席</button>
+            </li>
+          </ul>
+        </div>
+        <div class="col">
+          <p>出席済み</p>
+          <ul class="list-group">
+            <li v-for="member in attendanceMember" :key="member.id" class="list-group-item position-relative">
+              <img :src=`./avatars/avatar-${member.id}.jpg` alt="..." class="rounded-circle">
+              <span class="mr-1">{{ member.name }}</span>
+              <span v-if="!member.remote" class="badge badge-pill badge-primary">Onsite</span>
+              <span v-if="member.remote" class="badge badge-pill badge-secondary">Remote</span>
+              <button @click="cancel(member.id)" type="button"
+                class="btn btn-outline-danger btn-sm position-absolute">取り消し</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script type="module">
+    import memberData from './data/memberData.js'
+
+    const app = new Vue({
+      el: '#app',
+      data: {
+        appTitle: 'Attendanceeeee',
+        memberData: memberData,
+      },
+      computed: {
+        onsiteMember() {
+          return this.memberData.filter(member => member.remote == false && member.attend == false)
+        },
+        remoteMember() {
+          return this.memberData.filter(member => member.remote == true && member.attend == false)
+        },
+        attendanceMember() {
+          return this.memberData.filter(member => member.attend == true)
+        }
+      },
+      methods: {
+        attend(id) {
+          this.memberData.find(member => member.id == id).attend = true
+        },
+        cancel(id) {
+          this.memberData.find(member => member.id == id).attend = false
+        }
+      }
+    })
+  </script>
+</body>
+
+</html>
